@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<title>경찰대학교</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/my.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/my.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$('.bxslider').bxSlider({
+				 mode: 'horizontal',
+				 speed:1000,
+				 auto: true,
+				 autoControls: true});
+				$('.menu').click(function(){
+					$('.menu01').slideToggle();
+					});
+				$('.close').click(function(){
+					$('.menu01').hide();
+				});
+			});
+		</script>
+		<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+		<header>	
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="경찰대학로고"></a></h1>
+			<ul>
+				<li><a href="#" class="menu"><i class="fa fa-bars"></i></a>
+					<ul class="menu01">
+						<li class="close"><a href="#" class="close"><i class="fa fa-close"></i></a></li>
+						<li class="menu02 topmargin"><a href="info.html">정보공개</a></li>
+						<li class="menu02"><a href="univer.html">대학소개</a></li>
+						<li class="menu02"><a href="entrance.html">입학</a></li>
+						<li class="menu02"><a href="edu.html">교육</a></li>
+						<li class="menu02"><a href="life.html">대학생활</a></li>
+						<li class="menu02"><a href="knnow.html">KNPU NOW</a></li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+		<section class="visual">
+			<p class="img100"></p>
+				<ul class="bxslider">
+					<li><img src="images/main-img.jpg" alt="사진" class="img100"></li>
+					<li><img src="images/mainvisual02.jpg" alt="사진" class="img100"></li>
+					<li><img src="images/mainvisual03.jpg" alt="사진" class="img100"></li>
+				</ul>
+			<p class="main-text">국민과 함께하는<br><span class="mainsp1">믿음직한</span> <span class="mainsp2">경찰</span></p>
+		</section>
+		<section class="contents">
+			<ul class="redbox">
+				<li class="redbar"></li>
+				<li class="red-text">경찰대학 교수요원 및 로스쿨 겸임 교수 추천후보자<br>(인력풀) 선발 공고"</li>
+				<li class="red-text2">- 교수요원 자격 요건 : 경위 이상 경찰공무원<br>- 로스쿨 겸임교수 자격 요건 : 경감 이상 경찰공무원"</li>
+				<li class="red-plus1"><a href="#"><img src="images/plus1.png" alt="이동버튼"></a></li>
+			</ul>
+			
+			<ul class="movi"><img src="images/movi2.jpg" alt="홍보영상" class="img100"><span></span>
+				<li class="movi-box"><a href="#">KNPU<br>홍보동영상</a></li>
+			</ul>
+			
+			<ul class="bluebox">
+				<li class="bluet1">2018년도<br><span>입학안내</span></li>
+				<li class="bluet2"><a href="#">Q &amp; A 바로가기</a></li>
+			</ul>
+			
+			<ul class="knpunowbox">
+				<li class="opbox"></li>
+				<li class="knpuboxt">KNPU NOW</li>
+				<li class="knpuplus1"><a href="#"><img src="images/plue2.png" alt="이동버튼"></a></li>
+			</ul>
+			<ul class="knpunowbox2">
+				<li class="opbox2"></li>
+				<li class="knpuboxt">직무교육생정보</li>
+				<li class="knpuplus1"><a href="#"><img src="images/plue3.png" alt="이동버튼"></a></li>
+			</ul>
+			<ul class="knpunowbox3">
+				<li class="opbox3"></li>
+				<li class="knpuboxt">뉴스레터</li>
+				<li class="knpuplus1"><a href="#"><img src="images/plue4.png" alt="이동버튼"></a></li>
+			</ul>
+			<ul class="knpunowbox4">
+				<li class="opbox4"></li>
+				<li class="knpuboxt">부서별 연락처</li>
+				<li class="knpuplus1"><a href="#"><img src="images/plue5.png" alt="이동버튼"></a></li>
+			</ul>
+		</section>
+		
+		<footer>
+			<ul class="forter">
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">대학정보공시</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li>
+					<form name="주요사이트바로가기" method="post">
+						<fieldset>
+							<select name="변수" class="opti">
+								<option class="opti">주요사이트바로가기</option>
+								<option value="값1">독도경비대</option>
+								<option value="값2">도로교통공단</option>
+								<option value="값2">국립과학수사연구원</option>
+							</select>
+							<button type="button">이동</button>
+						</fieldset>
+					</form>
+				</li>
+			</ul>
+			
+			<ul class="fobottom">
+				<li class="fobo"><img src="images/bottom.png" alt="하단로고"></li>
+				<li class="foboa">[31539] 충청남도 아산시 신창면 황산길 100-50 경찰대학 ARS 041-968-2114 민원전화 : 182</li>
+				<li class="fobob">홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반 시 처벌될 수 있음을 양지하여 주시기 바랍니다.</li>
+				<li class="foboc">Copyright &copy; 2019. BY SongInhye All Right Reserved.</li>
+			</ul>
+		</footer>
+
+	</body>
+</html>
