@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+body,html{width: 100%; height: 100%; font-size: 16px; color: #333;  -ms-overflow-style: none;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333;}
+button,input{border: 0; outline: none;}
+input:focus{outline: none;}
+::-webkit-scrollbar{ display:none;}
+
+/*        공통*/
+        .common{clear: both; width: 100%; height: 100vh; position: relative; overflow: hidden; border-bottom: 1px solid #666;}
+        .footer{clear: both; width: 100%; height: 80px; background-color: #333;}
+        .gradient{
+            background: linear-gradient(to right, rgba(198,255,221,1) 0%,rgba(251,215,134,1) 50%,rgba(247,121,125,1) 100%);
+            background-size: 600% 600%; /*그라디언트한 색을 쭉쭉 늘려 한 화면에 한 색이 나오도록 함*/
+            background-position: 0% 100%; /*만든 색상 중에서 위치를 조정하여 출력할 색을 정함*/
+            animation-name: gradient; animation-duration: 10s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+        @keyframes gradient{50%{background-position: 100% 0%;}}
+        
+        
+/*        왼쪽 메뉴바*/
+        .leftBar{position: fixed; left: 0; bottom: 70px; z-index: 10;}
+        .leftBar .leftBtn{}
+        .leftBar .leftBtn div{display: block; width: 270px; height: 100px; color: #666;line-height: 50px; font-weight: bold; letter-spacing: 1px; text-align: center; border-radius: 5px; float: left;position: relative; left: -225px; margin-bottom: 5px;}
+        .leftBar .leftBtn a{display: block; width: 220px; height: 100px;font-weight: bold; letter-spacing: 1px; text-align: center; background-color: #333; color: #fff; line-height: 100px; text-align: center;}
+        .leftBar .leftBtn span{display: block; width: 100px; height: 100px;font-weight: 900; letter-spacing: 2px; text-align: center; background-color: transparent;  border-radius: 5px; color: #666; position: absolute;  top: 0; right: 0; transform: rotate(90deg); cursor: pointer;}
+/*        1페이지-겉페이지*/
+        .page1 img{display: block; position: relative; top: 0; left: 0; width: 100%; height: 100%;}
+        .page1 .mouse_i{
+            display: block; width: 30px; height: 40px; position: relative; left:calc(50% - 15px); bottom: 60px; border-radius: 10px;
+            animation-name: gradient; animation-duration: 10s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+        .page1 .mouse_i::after{
+            display: block; content: ""; width: 10px; height: 10px; position: absolute; left:calc(50% - 5px); top: 5px; border-radius: 50%; background-color: #333;
+            animation-name: mouse; animation-duration: 1.4s; animation-timing-function: ease-out; animation-iteration-count: infinite;}
+        .page1 .mouse_i::before{
+            display: block; content: ""; width: 2px; height: 30px; position: absolute; left:calc(50% - 1px); top: 5px; background-color: #ccc;}
+        @keyframes mouse{50%{top: 25px;}}
+/*        2페이지-About Me*/
+        .page2{background-color: rgba(251,215,134,1);}
+        .page2 .inner{
+            width: 1400px; height: 800px; padding: 50px; box-sizing: border-box; border-radius: 10px; position: relative; top:calc(50% - 400px); left: calc(50% - 700px); background-color: #fff; }
+        .page2 .right_deco{display: block; width: 700px; height: 80px; transform: rotate(-90deg); position: fixed; right: -250px; top:calc(50% - 200px); z-index: 5; color: #fff; font-size: 100px;  text-shadow: 1px 1px 10px rgba(0,0,0,0.2);}
+        .page2 .title{width: 100%; line-height: 50px; padding-bottom: 80px; color:#ff9974; text-align: center; font-weight: bold; font-size: 3rem; }
+        .page2 .contents{width: 1300px; height: 500px;box-sizing: border-box;}
+        .page2 .contents .img_com_Box{float: left; width: 350px; height: 500px; margin-left:62.5px; margin-top: 5px; overflow: hidden;  opacity: 0;}
+        .page2 .contents .img_com_Box img{display: block; width: 350px; height: 350px; margin-bottom: 10px;  border-radius: 50% 0 50% 50% ;}
+        .page2 .contents .img_com{width: 350px; height: 130px; line-height: 2; text-align: center; padding: 15px 10px 5px; box-sizing: border-box; color: #333; border: 2px solid #ffc6b2; border-radius: 10px;}
+        .page2 .contents .img_com strong{color:orangered;}
+/*        3페이지-About Me*/
+        .page3{background-color: #a0dfa8;}
+        .page3 .inner{
+            width: 1400px; height: 800px; padding: 50px; box-sizing: border-box; border-radius: 10px; position: relative; top:calc(50% - 400px); left: calc(50% - 700px); background-color: #fff;}
+        .page3 .right_deco{display: block; width: 700px; height: 80px; transform: rotate(-90deg); position: absolute; right: -250px; top:calc(50% - 200px); z-index: 5; color: #fff; font-size: 100px;  text-shadow: 1px 1px 10px rgba(0,0,0,0.2);}
+        .page3 .title_img{display: block; width: 400px; position: absolute; right: 30px;}
+        .page3 .title{width: 100%; line-height: 50px; padding-bottom: 80px; color:rgb(124, 209, 159); text-align: center; font-weight: bold; font-size: 3rem; }
+        .page3 .skillBox{width: 1300px; height: 550px; padding: 5% 10%; box-sizing: border-box;}
+        .page3 .skillBox .graph{width: 800px; height: 75px;}
+        .page3 .skill_icon{display: inline-block;}
+        .page3 .skillbarBox{float: left; width: 800px; height: 50px; position: relative; left: 0;}
+        .page3 .skillbarBox .innerbar{width: 700px; height: 50px;position: absolute; left: 52px; top: 0; background-color: #ccc; overflow: hidden;}
+        .innerbar .innercolor{height: 50px; position: relative; left: 0px; top: 0; overflow: hidden; margin-left: -100%;}
+        .skillbarBox .innerbar .innercolor .skill_percent{position: absolute; right: 5px; line-height: 50px; color: #fff; z-index: 5; letter-spacing: 1px;}
+        
+        #html .innerbar .innercolor{width: 95%; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(121,9,119,1) 100%);}
+        #css .innerbar .innercolor{width: 93%; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(55,154,214,1) 100%);}
+        #js .innerbar .innercolor{width: 85%; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(175,203,5,1) 100%);}
+        #ph .innerbar .innercolor{width: 87%; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(46,47,77,1) 100%);}
+        #ai .innerbar .innercolor{width: 89%; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,121,26,1) 100%);}
+        #ms .innerbar .innercolor{width: 92%; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,41,34,1) 100%);}
+        
+        .page3 .contents .text{width: 200px; height: 100px; position: absolute; right: 140px; bottom: 100px;}
+        .page3 .contents .text h4{letter-spacing: 2px;}
+        .page3 .contents .text span{display: block; float: left;line-height: 50px;}
+        .page3 .contents .text .percent_symbol{display: block; float: left;line-height: 65px; font-weight: 600; }
+        .page3 .contents .text .percent_number{width: 50px; color: red; font-size: 30px; font-weight: bold; margin: 0 20px;}
+/*        4페이지-work*/
+        .page4{background-color: #f99d81;}
+        .page4 .inner{
+            width: 1400px; height: 800px; padding: 50px; box-sizing: border-box; border-radius: 10px; position: relative; top:calc(50% - 400px); left: calc(50% - 700px); background-color: #fff;}
+        .work_menu{width: 100%; height: 25px;}
+        .work_menu button{display: block; position: relative; float: left; width: 100px; height: 25px; margin: 0 auto; outline: none; border: 0; border-left: 1px solid #fff; font-weight: 500;  letter-spacing: 1px; font-size: 1.2rem;  line-height: 25px; color: #969696; background-color: #ccc; cursor: pointer;  overflow: hidden;}
+        .work_menu button::after{display: block;content: ""; position: absolute; left: -110%; bottom:0; width: 100px; height: 2px; background-color: rgb(248, 82, 88); }
+        button.on{background-color: rgba(247,121,125,1); color: #fff;}
+        .inner_inner{position: absolute; width: 1300px; height: 650px; background-color: rgba(247,121,125,1); border-left: 1px solid #fff; padding: 20px 40px 0 100px; box-sizing: border-box;}
+        .inner_inner div{float: left; width: 500px; height: 300px; margin-bottom: 15px; margin-left:30px; overflow: hidden; border-radius: 10px;}
+        .inner_inner div a{display: block; width: 500px;position: relative;}
+        .inner_inner img{display: block; width:100%; height: auto; transform: scale(1);}
+        .clickme{width: 500px; height: 100px; position: absolute; bottom: 0; background-color: rgba(0, 0, 0, 0.69); color: #fff; font-weight: bold; letter-spacing: 1px; text-align: center; line-height: 60px; transition: all 0.4s;}
+        .clickok{ background-color: rgba(255, 127, 80, 0.8);}
+        
+        
+        
+/*        모달창 띄우기*/
+        #black{position: fixed; background: rgba(0,0,0,0.7);top: 0;bottom: 0;left: 0;right: 0;}
+        #big{position: fixed ;width: 800px;height: 700px;background: #fff;top: calc(50% - 400px);left:calc(50% - 350px);padding: 50px;box-sizing:border-box;}
+        #big .view{position: relative; width: 100%; height: 100%; overflow: hidden;}
+        #big .view img{display: block; width: 100%; height: 100%;}
+        #big .view a{display: block; width: 100%; height: 100px; position: absolute; bottom: 0; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.59); font-size: 20px;; color: firebrick;z-index: 5; text-align: center; line-height: 100px;}
+        .page4 .close{width: 50px; height: 50px;position: fixed; top: 85px; right: 450px;padding: 5px 5px; box-sizing: border-box;  cursor: pointer;}
+        .page4 .close span{display: block; width: 40px; height: 5px; margin: 10px auto; background-color: #fff; border-radius: 5px; transition: 0.4s; cursor: pointer;  opacity: 0.4;}
+        .page4 .close:hover span:first-of-type{transform: rotate(45deg);}
+        .page4 .close:hover span:last-of-type{transform: rotate(-45deg) translatex(10px) translateY(-10px);}
+        .page4 .close:hover span{opacity: 1;}
+/*        */
