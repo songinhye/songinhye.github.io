@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+	<head>
+		<title>경찰대학교</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/me.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$(".main-col1").click(function(){
+					$(".main-col1-toggle").show();
+					$(".main-col1").css("background-color","#fe9710");
+					$(".main-col1").css("font-weight","700");
+				});
+				$(".main-col2,.main-col3").click(function(){
+					$(".main-col1-toggle").hide()
+					$(".main-col1").css("background-color","#333");
+					$(".main-col1").css("font-weight","400");
+				});
+				$(".main-col2").click(function(){
+					$(".main-col1-toggle2").show();
+					$(".main-col2").css("background-color","#fe9710");
+					$(".main-col2").css("font-weight","700");
+				});
+				$(".main-col1,.main-col3").click(function(){
+					$(".main-col1-toggle2").hide();
+					$(".main-col2").css("background-color","#333");
+					$(".main-col2").css("font-weight","400");
+				});
+				$(".main-col3").click(function(){
+					$(".main-col1-toggle3").show();
+					$(".main-col3").css("background-color","#fe9710");
+					$(".main-col3").css("font-weight","700");
+				});
+				$(".main-col1,.main-col2").click(function(){
+					$(".main-col1-toggle3").hide();
+					$(".main-col3").css("background-color","#333");
+					$(".main-col3").css("font-weight","400");
+				});
+				$('.bxslider').bxSlider({
+				 mode: 'horizontal',
+				 speed:1000,
+				 auto: true,
+				 autoControls: true});
+				 
+				 $(".info-tog").click(function(){
+					$("ul .info-toggle").slideToggle();
+				});
+				
+				 $(".menu-l1").hover(function(){
+					$(".info-sub-menu01").show();
+				});
+				$(".menu-l1").mouseleave(function(){
+					$(".info-sub-menu01").hide();
+				});
+				
+				 $(".menu-l2").hover(function(){
+					$(".info-sub-menu02").show();
+				});
+				$(".menu-l2").mouseleave(function(){
+					$(".info-sub-menu02").hide();
+				});
+				
+				 $(".menu-l3").hover(function(){
+					$(".info-sub-menu03").show();
+				});
+				$(".menu-l3").mouseleave(function(){
+					$(".info-sub-menu03").hide();
+				});
+				
+				 $(".menu-l4").hover(function(){
+					$(".info-sub-menu04").show();
+				});
+				$(".menu-l4").mouseleave(function(){
+					$(".info-sub-menu04").hide();
+				});
+				
+				 $(".menu-l5").hover(function(){
+					$(".info-sub-menu05").show();
+				});
+				$(".menu-l5").mouseleave(function(){
+					$(".info-sub-menu05").hide();
+				});
+				
+				 $(".menu-l6").hover(function(){
+					$(".info-sub-menu06").show();
+				});
+				$(".menu-l6").mouseleave(function(){
+					$(".info-sub-menu06").hide();
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="top over">
+			<p class="top-menu float-r"><a href="#">로그인</a><a href="#">사이트맵</a><a href="#">E-MAIL</a></p>
+			<h1 class="logo float-l"><a href="index.html"><img src="images/logo2.png" alt="경찰대학교"></a></h1>
+		</div>
+		<header class="both">
+			<div class="menu-boder over">
+				<ul class="menu-list">
+					<li class="menu-l1 float-l"><a href="info.html">정보공개</a>
+						<ul class="info-sub-menu01">
+							<li class="info-sub-menu1"><a href="#">정보공개제도안내</a></li>
+							<li class="info-sub-menu1"><a href="#">사전정보공표</a></li>
+							<li class="info-sub-menu1"><a href="#">비공개세부기준</a></li>
+							<li class="info-sub-menu1"><a href="#">정보목록</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개청구</a></li>
+							<li class="info-sub-menu1"><a href="#">공공데이터개방</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개자료실</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l2 float-l"><a href="intro.html">대학소개</a>
+						<ul class="info-sub-menu02">
+							<li class="info-sub-menu1"><a href="#">학과장과의만남</a></li>
+							<li class="info-sub-menu1"><a href="#">창학이념/학훈</a></li>
+							<li class="info-sub-menu1"><a href="#">교가</a></li>
+							<li class="info-sub-menu1"><a href="#">현역</a></li>
+							<li class="info-sub-menu1"><a href="#">역대학장</a></li>
+							<li class="info-sub-menu1"><a href="#">비전</a></li>
+							<li class="info-sub-menu1"><a href="#">조직 및 업무소개</a></li>
+							<li class="info-sub-menu1"><a href="#">대학상징물</a></li>
+							<li class="info-sub-menu1"><a href="#">캠퍼스안내</a></li>
+							<li class="info-sub-menu1"><a href="#">경찰대학법령집</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l3 float-l"><a href="enter.html" class="action">입학</a>
+						<ul class="info-sub-menu03">
+							<li class="info-sub-menu1"><a href="#">모집요강</a></li>
+							<li class="info-sub-menu1"><a href="#">입시알림터</a></li>
+							<li class="info-sub-menu1"><a href="#">입시상담</a></li>
+							<li class="info-sub-menu1"><a href="#">입시자료</a></li>
+							<li class="info-sub-menu1"><a href="#">장학제도및졸업후진로</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l4 float-l"><a href="stu.html">교육</a>
+						<ul class="info-sub-menu04">
+							<li class="info-sub-menu1"><a href="#">대학과정</a></li>
+							<li class="info-sub-menu1"><a href="#">직무과정</a></li>
+							<li class="info-sub-menu1"><a href="#">교수마당</a></li>
+							<li class="info-sub-menu1"><a href="#">글로벌KNPU</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l5 float-l"><a href="life.html">대학생활</a>
+						<ul class="info-sub-menu05">
+							<li class="info-sub-menu1"><a href="#">학교생활</a></li>
+							<li class="info-sub-menu1"><a href="#">자치기구</a></li>
+							<li class="info-sub-menu1"><a href="#">대학행사</a></li>
+							<li class="info-sub-menu1"><a href="#">동아리활동</a></li>
+							<li class="info-sub-menu1"><a href="#">청람교육</a></li>
+						</ul>
+					</li>
+					<li class="menu-l6 float-l"><a href="knpunow.html">KNPU NOW</a>
+						<ul class="info-sub-menu06">
+							<li class="info-sub-menu1"><a href="#">공지사항</a></li>
+							<li class="info-sub-menu1"><a href="#">언론보도</a></li>
+							<li class="info-sub-menu1"><a href="#">동영상뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">포토뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">행복한나눔</a></li>
+							<li class="info-sub-menu1"><a href="#">어린이교통교육</a></li>
+							<li class="info-sub-menu1"><a href="#">폴리스아카데미</a></li>
+							<li class="info-sub-menu1"><a href="#">자료실</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="both">
+			<div class="sub-visual">
+				<div class="sub-text">
+					<h2 class="float-l" style="margin-right:876px;">입학</h2>
+					<p class="sub-box float-l"><a href="intro.html"><img src="images/sub-menu-l.png" alt="상위 페이지로 이동"></a></p>
+					<p class="sub-box float-l" style="margin-left:30px;"><a href="stu.html"><img src="images/sub-menu-r.png" alt="하위 페이지로 이동"></a></p>
+				</div>
+			</div>
+			<div class="q-menu-bor">
+				<div class="q-menu-box over">
+					<ul class="float-r">
+						<li class="q-menu-li1 float-l"><a href="#"><img src="images/home.png" alt="홈"></a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li2 float-l"><a href="#">입학</a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li4 float-l"><a href="#">장학제도 및 졸업 후 진로</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="both">
+			<div class="info-contents">
+				<h2>장학제도 및 졸업 후 진로</h2>
+		`	</div>
+			<div class="sub-info01 both">
+				<ul class="info01-ul">
+					<li class="info01-li01"><img src="images/sub-bigcon.png" alt="장학제도"><span class="bigcon-span1">장학제도</span></li>
+					<li class="info01-li02 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">재학중 학비 전액 면제 및 피복, 교재 등 국비 지급</li>
+					<li class="info01-li02 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">재학중 매년 학년별 품위유지비(수당) 지급</li>
+					<li class="info01-li02 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">재학중 학비 전액 면제 및 피복, 교재 등 국비 지급</li>
+					
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="장학제도"><span class="bigcon-span1">졸업 후 진로</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">근무개관<br><span class="enter-span">대학을 졸업한 경찰대학생은 남자의 경우, 병역의무 이수 및 순환보직을 거쳐 본인의 능력과 희망에 따라 경찰의 다양한 경과에서 근무하게 됩니다.</span><br><span class="enter-span">여학생의 경우에는 졸업 후 경찰교육원에서 전술지휘과정 이수 후 순환보직근무를 시작합니다.</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">병역의무<br><span class="enter-span">졸업 전 군 훈련소에서 기초군사훈련 이수(4주)</span><br><span class="enter-span">졸업 후 경찰교육원에서 전술지휘과정 이수(8주)</span><br><span class="enter-span">의경 기동대에서 총 2년간 지휘관 또는 참모 근무로 병역의무를 마칩니다.</span><br><span class="enter-span">다만, 병역제도의 변경 시에는 달라질 수 있습니다.</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">인사관리<br><span class="enter-span">병역의무를 마친 후 경찰서에서 2년 6개월간 순환보직을 실시합니다. (지구대 또는 파출소 6개월, 경찰서 수사부서(경제팀) 2년)</span><br><span class="enter-span">여학생은 졸업 후 전술지휘과정 이수 후 순환보직 실시, 순환보직을 마친 후 적성, 희망, 능력 등을 고려하여 인사배치 됩니다.</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">의무복무<br><span class="enter-span">경찰대학을 졸업하면 6년간(병역기간포함) 경찰에 의무적으로 복무해야 합니다. 의무복무를 이행하지 못할 경우에는 소정의 학비를 상환해야 합니다.</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">해외유학<br><span class="enter-span">경찰대학을 졸업하고 일정기간 경과 후(3~4년) 행정안전부에서 실시하는 국비장기유학 시험 등에 합격하는 경우에는 장기 2년 이상, 단기 6월 이하의</span><br><span class="enter-span">해외유학을 할 수 있습니다. 유학자는 교육파견 발령을 받게 되며 유학기간 중 필요한 학비와 생활비 전액을 지원받게 됩니다.</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">승진<br><span class="enter-span">경찰관의 승진은 시험승진과 심사승진으로 이우러지며, 일정한 기간 이상의 승진소요연수 경과 후 승진할 수 있습니다. 경정까지는 시험승진과 심사승</span></br><span class="enter-span">진이 병행되며, 총경부터는 심사에 의해서만 승진하게 됩니다.</span><br><span class="enter-span">(승진소요연수 : 경감 - 2년(병역의무기간 제외), 경정 - 3년)</span></li>
+					<li class="info01-li02 line-height30 margin-b20"><img src="images/sub-minicon.png" alt="장학제도 세부내용">경위이상 경찰관 직급 및 직위표</li>
+					<li class="enter-table">
+						<table summary="승진목록" class="enter-list">
+							<colgroup>
+								<col width="165px">
+								<col width="250px">
+								<col width="250px">
+								<col width="165px">
+								<col width="165px">
+								<col width="165px">
+							</colgroup>
+							<caption class="un">승진표</caption>
+								<thead class="enter-list01">
+									<tr class="enter-tr01">
+										<th scope="col" class="bord-right"></th>
+										<th scope="col" class="bord-right">경찰청</th>
+										<th scope="col" class="bord-right">지방경찰청</th>
+										<th scope="col" class="bord-right">경찰서</th>
+										<th scope="col" class="bord-right">지구대</th>
+										<th scope="col">파출소</th>										
+									</tr>
+								</thead>
+								<tbody class="enter-list02">
+									<tr>
+										<td class="enter-wei bord-right">치안총감</td>
+										<td class="enter-td bord-right">청장</td>
+										<td class="bord-right"></td>
+										<td class="bord-right"></td>
+										<td class="bord-right"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right">치안정감</td>
+										<td class="enter-td bord-right">차장, 경찰대학장</td>
+										<td class="enter-td bord-right">서울·부산·인천·경기지방<br>경찰청장</td>
+										<td class="bord-right"></td>
+										<td class="bord-right"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right">치안감</td>
+										<td class="enter-td bord-right">국장</td>
+										<td class="enter-td bord-right">지방경찰청장</td>
+										<td class="bord-right"></td>
+										<td class="bord-right"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right">경무관</td>
+										<td class="enter-td bord-right">관리관</td>
+										<td class="enter-td bord-right">부장</td>
+										<td class="bord-right"></td>
+										<td class="bord-right"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right">총경</td>
+										<td class="enter-td bord-right">과장</td>
+										<td class="enter-td bord-right">과장</td>
+										<td class="enter-td bord-right">경찰서장</td>
+										<td class="bord-right"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right">경정</td>
+										<td class="enter-td bord-right">계장</td>
+										<td class="enter-td bord-right">계장</td>
+										<td class="enter-td bord-right">과장</td>
+										<td class="enter-td bord-right">대장</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right">경감</td>
+										<td class="enter-td bord-right">반장/실무자</td>
+										<td class="enter-td bord-right">반장/실무자</td>
+										<td class="enter-td bord-right">계장/팀장</td>
+										<td class="enter-td bord-right">대장/팀장</td>
+										<td class="enter-td bord-right">소장</td>
+									</tr>
+									<tr>
+										<td class="enter-wei bord-right enter-bot">경위</td>
+										<td class="enter-td bord-right enter-bot">실무자</td>
+										<td class="enter-td bord-right enter-bot">실무자</td>
+										<td class="enter-td bord-right enter-bot">계장/팀장/실무자</td>
+										<td class="enter-td bord-right enter-bot">팀장/실무자</td>
+										<td class="enter-td bord-right enter-bot">소장/팀장/실무자</td>
+									</tr>
+								</tbody>
+						</table>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		
+		
+		<!--포터-->
+		<footer class="both over">
+			<div class="foo-color">
+				<h3 class="fo-logo float-l"><img src="images/foo-logo.png" alt="하단로고"></h3>
+				<p class="fo-text float-l"><a href="#" class="fo-href1">개인정보처리방침</a><span class="fo-span">|</span><a href="#">저작권정책</a><span class="fo-span">|</span><a href="#">개인정보침해신고</a><span class="fo-span">|</span><a href="#">뷰어다운로드</a><span class="fo-span">|</span><a href="#">이메일집단수집거부</a></p>
+				<p class="fo-text2 float-l">[31539] 충청남도 아산시 신창면 황산길 100-50 경찰대학 ARS 041-968-2114 민원전화 : 182<br>
+								홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반 시 처벌될 수 있음을 양지하여 주시기 바랍니다.<br>
+								Copyright&copy; 2020. BY SONGINHYE All Right Reserved.
+				<form name="search" method="post" action=""><!-- form 글쓰거나 입력하는 창 get-소량 전송값보임 post-대량 전송값안보임-->
+					<fieldset class="none over" style="margin-right:20px;">
+						<legend class="un">사이트이동</legend><!-- 제목 -->
+						<label for="seltype" class="un">사이트이동</label>
+							<div class="float-r">
+								<select name="list" id="seltype" class="list"><!-- 셀렉트는 목록상자 네임은 저장공간 옵션은 누르면 보이는 값 벨류는 초기값 예)="2015"누르면 저장되는 이름-->
+									<option>관련기관 바로가기</option>
+									<option>경찰1</option>
+									<option>경찰2</option>
+									<option>경찰3</option>
+								</select>
+								<button type="submit" class="serch-button"><a href="#">이동</a></button><!-- 지우기같은 버튼 태크/서브밋을 만나면 액션으로 이동 처리함-->
+							</div>
+					</fieldset>
+				</form>
+				</p>	
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+	<head>
+		<title>경찰대학교</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/me.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$(".main-col1").click(function(){
+					$(".main-col1-toggle").show();
+					$(".main-col1").css("background-color","#fe9710");
+					$(".main-col1").css("font-weight","700");
+				});
+				$(".main-col2,.main-col3").click(function(){
+					$(".main-col1-toggle").hide()
+					$(".main-col1").css("background-color","#333");
+					$(".main-col1").css("font-weight","400");
+				});
+				$(".main-col2").click(function(){
+					$(".main-col1-toggle2").show();
+					$(".main-col2").css("background-color","#fe9710");
+					$(".main-col2").css("font-weight","700");
+				});
+				$(".main-col1,.main-col3").click(function(){
+					$(".main-col1-toggle2").hide();
+					$(".main-col2").css("background-color","#333");
+					$(".main-col2").css("font-weight","400");
+				});
+				$(".main-col3").click(function(){
+					$(".main-col1-toggle3").show();
+					$(".main-col3").css("background-color","#fe9710");
+					$(".main-col3").css("font-weight","700");
+				});
+				$(".main-col1,.main-col2").click(function(){
+					$(".main-col1-toggle3").hide();
+					$(".main-col3").css("background-color","#333");
+					$(".main-col3").css("font-weight","400");
+				});
+				$('.bxslider').bxSlider({
+				 mode: 'horizontal',
+				 speed:1000,
+				 auto: true,
+				 autoControls: true});
+				 
+				 $(".info-tog").click(function(){
+					$("ul .info-toggle").slideToggle();
+				});
+				
+				 $(".menu-l1").hover(function(){
+					$(".info-sub-menu01").show();
+				});
+				$(".menu-l1").mouseleave(function(){
+					$(".info-sub-menu01").hide();
+				});
+				
+				 $(".menu-l2").hover(function(){
+					$(".info-sub-menu02").show();
+				});
+				$(".menu-l2").mouseleave(function(){
+					$(".info-sub-menu02").hide();
+				});
+				
+				 $(".menu-l3").hover(function(){
+					$(".info-sub-menu03").show();
+				});
+				$(".menu-l3").mouseleave(function(){
+					$(".info-sub-menu03").hide();
+				});
+				
+				 $(".menu-l4").hover(function(){
+					$(".info-sub-menu04").show();
+				});
+				$(".menu-l4").mouseleave(function(){
+					$(".info-sub-menu04").hide();
+				});
+				
+				 $(".menu-l5").hover(function(){
+					$(".info-sub-menu05").show();
+				});
+				$(".menu-l5").mouseleave(function(){
+					$(".info-sub-menu05").hide();
+				});
+				
+				 $(".menu-l6").hover(function(){
+					$(".info-sub-menu06").show();
+				});
+				$(".menu-l6").mouseleave(function(){
+					$(".info-sub-menu06").hide();
+				});
+				
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="top over">
+			<p class="top-menu float-r"><a href="#">로그인</a><a href="#">사이트맵</a><a href="#">E-MAIL</a></p>
+			<h1 class="logo float-l"><a href="index.html"><img src="images/logo2.png" alt="경찰대학교"></a></h1>
+		</div>
+		<header class="both">
+			<div class="menu-boder over">
+				<ul class="menu-list">
+					<li class="menu-l1 float-l"><a href="info.html">정보공개</a>
+						<ul class="info-sub-menu01">
+							<li class="info-sub-menu1"><a href="#">정보공개제도안내</a></li>
+							<li class="info-sub-menu1"><a href="#">사전정보공표</a></li>
+							<li class="info-sub-menu1"><a href="#">비공개세부기준</a></li>
+							<li class="info-sub-menu1"><a href="#">정보목록</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개청구</a></li>
+							<li class="info-sub-menu1"><a href="#">공공데이터개방</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개자료실</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l2 float-l"><a href="intro.html">대학소개</a>
+						<ul class="info-sub-menu02">
+							<li class="info-sub-menu1"><a href="#">학과장과의만남</a></li>
+							<li class="info-sub-menu1"><a href="#">창학이념/학훈</a></li>
+							<li class="info-sub-menu1"><a href="#">교가</a></li>
+							<li class="info-sub-menu1"><a href="#">현역</a></li>
+							<li class="info-sub-menu1"><a href="#">역대학장</a></li>
+							<li class="info-sub-menu1"><a href="#">비전</a></li>
+							<li class="info-sub-menu1"><a href="#">조직 및 업무소개</a></li>
+							<li class="info-sub-menu1"><a href="#">대학상징물</a></li>
+							<li class="info-sub-menu1"><a href="#">캠퍼스안내</a></li>
+							<li class="info-sub-menu1"><a href="#">경찰대학법령집</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l3 float-l"><a href="enter.html">입학</a>
+						<ul class="info-sub-menu03">
+							<li class="info-sub-menu1"><a href="#">모집요강</a></li>
+							<li class="info-sub-menu1"><a href="#">입시알림터</a></li>
+							<li class="info-sub-menu1"><a href="#">입시상담</a></li>
+							<li class="info-sub-menu1"><a href="#">입시자료</a></li>
+							<li class="info-sub-menu1"><a href="#">장학제도및졸업후진로</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l4 float-l"><a href="stu.html" class="action">교육</a>
+						<ul class="info-sub-menu04">
+							<li class="info-sub-menu1"><a href="#">대학과정</a></li>
+							<li class="info-sub-menu1"><a href="#">직무과정</a></li>
+							<li class="info-sub-menu1"><a href="#">교수마당</a></li>
+							<li class="info-sub-menu1"><a href="#">글로벌KNPU</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l5 float-l"><a href="life.html">대학생활</a>
+						<ul class="info-sub-menu05">
+							<li class="info-sub-menu1"><a href="#">학교생활</a></li>
+							<li class="info-sub-menu1"><a href="#">자치기구</a></li>
+							<li class="info-sub-menu1"><a href="#">대학행사</a></li>
+							<li class="info-sub-menu1"><a href="#">동아리활동</a></li>
+							<li class="info-sub-menu1"><a href="#">청람교육</a></li>
+						</ul>
+					</li>
+					<li class="menu-l6 float-l"><a href="knpunow.html">KNPU NOW</a>
+						<ul class="info-sub-menu06">
+							<li class="info-sub-menu1"><a href="#">공지사항</a></li>
+							<li class="info-sub-menu1"><a href="#">언론보도</a></li>
+							<li class="info-sub-menu1"><a href="#">동영상뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">포토뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">행복한나눔</a></li>
+							<li class="info-sub-menu1"><a href="#">어린이교통교육</a></li>
+							<li class="info-sub-menu1"><a href="#">폴리스아카데미</a></li>
+							<li class="info-sub-menu1"><a href="#">자료실</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="both">
+			<div class="sub-visual">
+				<div class="sub-text">
+					<h2 class="float-l" style="margin-right:876px;">교육</h2>
+					<p class="sub-box float-l"><a href="enter.html"><img src="images/sub-menu-l.png" alt="상위 페이지로 이동"></a></p>
+					<p class="sub-box float-l" style="margin-left:30px;"><a href="life.html"><img src="images/sub-menu-r.png" alt="하위 페이지로 이동"></a></p>
+				</div>
+			</div>
+			<div class="q-menu-bor">
+				<div class="q-menu-box over">
+					<ul class="float-r">
+						<li class="q-menu-li1 float-l"><a href="#"><img src="images/home.png" alt="홈"></a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li2 float-l"><a href="#">교육</a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li3 float-l"><a href="#">대학과정</a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li4 float-l"><a href="#">일반학기</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="both">
+			<div class="info-contents">
+				<h2>일반학기</h2>
+				<ul class="over">
+					<li class="stu-list01 margin-r20 float-l"><a href="#">전공과목</a></li>
+					<li class="stu-list02 margin-r20 float-l"><a href="#">전공기초과목</a></li>
+					<li class="stu-list02 margin-r20 float-l"><a href="#">교양과목</a></li>
+					<li class="stu-list02 float-l"><a href="#">학장지정과목</a></li>
+				</ul>
+		`	</div>
+			<div class="sub-info01 both">
+				<ul class="info01-ul">
+					<li class="info01-li01"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">전공과목은 경찰대학만의 특화된 과목으로서</span></li>
+					<li class="info01-li02">경찰법학, 범죄수사학, 경찰행정학, 공공질서학 4개전공으로 나누어 수강토록 하고 있으며 각 전공과목 공히 59학점(필수 10학점, 선택 49학점)을 이수해야 합니다.
+											전공과목은 3학년부터 수강하게 되며 전공기초과목에서 배웠던 교육내용을 기반으로 경찰실무와 밀접한 법학, 행정학과 경찰학을 분야별로 심도 있게 배우는
+											과정입니다. </li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">경찰법학</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">경찰법학은 필수과목으로ㅗ 헌법, 경찰행정법, 유가증권법과 범죄, 기업범죄, 민사법, 민사소송법, 국제법, 노동법, 경찰관직무집행법 등이 있습니다.</li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">범죄수사학</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">범죄수사학은 필수과목으로 특별형법, 형사판례연구, 비교형사사법제도론, 범죄수사기법론, 법과학개론, 면담조사기법론, 현장수사론, 사이버범죄수<span class="minicon-span1">사론, 수사사례세미나 등이 있습니다.</span></li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">공공질서학</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">공공질서학은 필수과목으로 사회질서론, 사회집단행동론, 범죄사회학, 범죄예방론, 교통안전정책론, 경찰정보분석론, 테러리즘, 풍속범죄론, 지역사회<span class="minicon-span1">와 경찰, 청소년비행론 등이 있습니다.</span></li>
+				</ul>
+			</div>
+		</section>
+		
+		
+		
+		<!--포터-->
+		<footer class="both over">
+			<div class="foo-color">
+				<h3 class="fo-logo float-l"><img src="images/foo-logo.png" alt="하단로고"></h3>
+				<p class="fo-text float-l"><a href="#" class="fo-href1">개인정보처리방침</a><span class="fo-span">|</span><a href="#">저작권정책</a><span class="fo-span">|</span><a href="#">개인정보침해신고</a><span class="fo-span">|</span><a href="#">뷰어다운로드</a><span class="fo-span">|</span><a href="#">이메일집단수집거부</a></p>
+				<p class="fo-text2 float-l">[31539] 충청남도 아산시 신창면 황산길 100-50 경찰대학 ARS 041-968-2114 민원전화 : 182<br>
+								홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반 시 처벌될 수 있음을 양지하여 주시기 바랍니다.<br>
+								Copyright&copy; 2020. BY SONGINHYE All Right Reserved.
+				<form name="search" method="post" action=""><!-- form 글쓰거나 입력하는 창 get-소량 전송값보임 post-대량 전송값안보임-->
+					<fieldset class="none over" style="margin-right:20px;">
+						<legend class="un">사이트이동</legend><!-- 제목 -->
+						<label for="seltype" class="un">사이트이동</label>
+							<div class="float-r">
+								<select name="list" id="seltype" class="list"><!-- 셀렉트는 목록상자 네임은 저장공간 옵션은 누르면 보이는 값 벨류는 초기값 예)="2015"누르면 저장되는 이름-->
+									<option>관련기관 바로가기</option>
+									<option>경찰1</option>
+									<option>경찰2</option>
+									<option>경찰3</option>
+								</select>
+								<button type="submit" class="serch-button"><a href="#">이동</a></button><!-- 지우기같은 버튼 태크/서브밋을 만나면 액션으로 이동 처리함-->
+							</div>
+					</fieldset>
+				</form>
+				</p>	
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+

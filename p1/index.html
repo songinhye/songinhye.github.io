@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+	<head>
+		<title>경찰대학교</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/me.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$(".main-col1").click(function(){
+					$(".main-col1-toggle").show();
+					$(".main-col1").css("background-color","#fe9710");
+					$(".main-col1").css("font-weight","700");
+				});
+				$(".main-col2,.main-col3").click(function(){
+					$(".main-col1-toggle").hide()
+					$(".main-col1").css("background-color","#333");
+					$(".main-col1").css("font-weight","400");
+				});
+				$(".main-col2").click(function(){
+					$(".main-col1-toggle2").show();
+					$(".main-col2").css("background-color","#fe9710");
+					$(".main-col2").css("font-weight","700");
+				});
+				$(".main-col1,.main-col3").click(function(){
+					$(".main-col1-toggle2").hide();
+					$(".main-col2").css("background-color","#333");
+					$(".main-col2").css("font-weight","400");
+				});
+				$(".main-col3").click(function(){
+					$(".main-col1-toggle3").show();
+					$(".main-col3").css("background-color","#fe9710");
+					$(".main-col3").css("font-weight","700");
+				});
+				$(".main-col1,.main-col2").click(function(){
+					$(".main-col1-toggle3").hide();
+					$(".main-col3").css("background-color","#333");
+					$(".main-col3").css("font-weight","400");
+				});
+				$('.bxslider').bxSlider({
+				 mode: 'horizontal',
+				 speed:1000,
+				 auto: true,
+				 autoControls: true});
+				 
+				 $(".menu-l1").hover(function(){
+					$(".info-sub-menu01").show();
+				});
+				$(".menu-l1").mouseleave(function(){
+					$(".info-sub-menu01").hide();
+				});
+				
+				 $(".menu-l2").hover(function(){
+					$(".info-sub-menu02").show();
+				});
+				$(".menu-l2").mouseleave(function(){
+					$(".info-sub-menu02").hide();
+				});
+				
+				 $(".menu-l3").hover(function(){
+					$(".info-sub-menu03").show();
+				});
+				$(".menu-l3").mouseleave(function(){
+					$(".info-sub-menu03").hide();
+				});
+				
+				 $(".menu-l4").hover(function(){
+					$(".info-sub-menu04").show();
+				});
+				$(".menu-l4").mouseleave(function(){
+					$(".info-sub-menu04").hide();
+				});
+				
+				 $(".menu-l5").hover(function(){
+					$(".info-sub-menu05").show();
+				});
+				$(".menu-l5").mouseleave(function(){
+					$(".info-sub-menu05").hide();
+				});
+				
+				 $(".menu-l6").hover(function(){
+					$(".info-sub-menu06").show();
+				});
+				$(".menu-l6").mouseleave(function(){
+					$(".info-sub-menu06").hide();
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="top over">
+			<p class="top-menu float-r"><a href="#">로그인</a><a href="#">사이트맵</a><a href="#">E-MAIL</a></p>
+			<h1 class="logo float-l"><a href="index.html"><img src="images/logo2.png" alt="경찰대학교"></a></h1>
+		</div>
+		<header class="both">
+			<div class="menu-boder over">
+				<ul class="menu-list">
+					<li class="menu-l1 float-l"><a href="info.html">정보공개</a>
+						<ul class="info-sub-menu01">
+							<li class="info-sub-menu1"><a href="#">정보공개제도안내</a></li>
+							<li class="info-sub-menu1"><a href="#">사전정보공표</a></li>
+							<li class="info-sub-menu1"><a href="#">비공개세부기준</a></li>
+							<li class="info-sub-menu1"><a href="#">정보목록</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개청구</a></li>
+							<li class="info-sub-menu1"><a href="#">공공데이터개방</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개자료실</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l2 float-l"><a href="intro.html">대학소개</a>
+						<ul class="info-sub-menu02">
+							<li class="info-sub-menu1"><a href="#">학과장과의만남</a></li>
+							<li class="info-sub-menu1"><a href="#">창학이념/학훈</a></li>
+							<li class="info-sub-menu1"><a href="#">교가</a></li>
+							<li class="info-sub-menu1"><a href="#">현역</a></li>
+							<li class="info-sub-menu1"><a href="#">역대학장</a></li>
+							<li class="info-sub-menu1"><a href="#">비전</a></li>
+							<li class="info-sub-menu1"><a href="#">조직 및 업무소개</a></li>
+							<li class="info-sub-menu1"><a href="#">대학상징물</a></li>
+							<li class="info-sub-menu1"><a href="#">캠퍼스안내</a></li>
+							<li class="info-sub-menu1"><a href="#">경찰대학법령집</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l3 float-l"><a href="enter.html">입학</a>
+						<ul class="info-sub-menu03">
+							<li class="info-sub-menu1"><a href="#">모집요강</a></li>
+							<li class="info-sub-menu1"><a href="#">입시알림터</a></li>
+							<li class="info-sub-menu1"><a href="#">입시상담</a></li>
+							<li class="info-sub-menu1"><a href="#">입시자료</a></li>
+							<li class="info-sub-menu1"><a href="#">장학제도및졸업후진로</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l4 float-l"><a href="stu.html">교육</a>
+						<ul class="info-sub-menu04">
+							<li class="info-sub-menu1"><a href="#">대학과정</a></li>
+							<li class="info-sub-menu1"><a href="#">직무과정</a></li>
+							<li class="info-sub-menu1"><a href="#">교수마당</a></li>
+							<li class="info-sub-menu1"><a href="#">글로벌KNPU</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l5 float-l"><a href="life.html">대학생활</a>
+						<ul class="info-sub-menu05">
+							<li class="info-sub-menu1"><a href="#">학교생활</a></li>
+							<li class="info-sub-menu1"><a href="#">자치기구</a></li>
+							<li class="info-sub-menu1"><a href="#">대학행사</a></li>
+							<li class="info-sub-menu1"><a href="#">동아리활동</a></li>
+							<li class="info-sub-menu1"><a href="#">청람교육</a></li>
+						</ul>
+					</li>
+					<li class="menu-l6 float-l"><a href="knpunow.html">KNPU NOW</a>
+						<ul class="info-sub-menu06">
+							<li class="info-sub-menu1"><a href="#">공지사항</a></li>
+							<li class="info-sub-menu1"><a href="#">언론보도</a></li>
+							<li class="info-sub-menu1"><a href="#">동영상뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">포토뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">행복한나눔</a></li>
+							<li class="info-sub-menu1"><a href="#">어린이교통교육</a></li>
+							<li class="info-sub-menu1"><a href="#">폴리스아카데미</a></li>
+							<li class="info-sub-menu1"><a href="#">자료실</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="both over">
+			<div class="main-side">
+				<div class="main-visual1">
+					<ul class="bxslider float-l">
+					  <li><img src="images/main-visual1.png" alt=""></li>
+					  <li><img src="images/main-visual2.png" alt=""></li>
+					</ul>
+					<p class="side-txt">끝없는 <span class="side02-span">도전</span>과 <span class="side02-span">열정</span>이 살아숨쉬는<br><span class="side02-span">청년경찰</span></p>
+					<div class="main-not float-l">
+						<p class="main-col1 float-l acti"><a href="#none">공지사항</a></p>
+						<p class="main-col2 float-l"><a href="#none">입시공지</a></p>
+						<p class="main-col3 float-l"><a href="#none">입시이의제기</a></p>
+						<p class="main-col4 float-r"><a href="#none"><img src="images/icon-plus.png" alt="더보기"></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="both">
+			<div class="main-col1-toggle over">
+				<ul class="main-col1-sub float-l">
+					<li class="col1-line float-l">2020<br><span class="line-blue">10.23</span></li>
+					<li class="col1-line02 float-l"><img src="images/mini-icon.png" alt="주석"><a href="#">무궁화체육단 의문경찰순경(체육특기) 합격자 발표</a><br><span class="col1-line-span2">※ 기타 자세한 사항은 첨부물을 확인하시기 바랍니다.</span><br><br><span class="col1-line03"><a href="#">+ more</a></span></li>	
+				</ul>
+				<ul class="main-col-sub2 float-l">
+					<li class="col1-line04 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">2020 제7회 경찰대학 국제학술세미나 개최 안내</a></li>
+					<li class="col1-line-num1 float-r">2020-10-20</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">경찰학연구 제17권 제4호(통권 제52호) 논문 공고</a></li>
+					<li class="col1-line-num2 float-r">2020-10-17</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">치안정책연구 제31권 제3호 논문 모집 공고</a></li>
+					<li class="col1-line-num2 float-r">2020-09-29</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">관공서 임시공휴일 지정 관련 안내(10월02일)</a></li>
+					<li class="col1-line-num2 float-r">2020-09-21</li>
+				</ul>
+			</div>
+			
+			<div class="main-col1-toggle2 over both">
+				<ul class="main-col1-sub float-l">
+					<li class="col1-line float-l">2020<br><span class="line-blue">09.14</span></li>
+					<li class="col1-line02 float-l"><img src="images/mini-icon.png" alt="주석"><a href="#">2018학년도 신입생 모집 2차(면접)시험 안내<br><span class="col1-line-span1">선발공고</span></a><br><span class="col1-line-span2">※ 기타 자세한 사항은 첨부물을 확인하시기 바랍니다.</span><br><span class="col1-line03"><a href="#">+ more</a></span></li>	
+				</ul>
+				<ul class="main-col-sub2 float-l">
+					<li class="col1-line04 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">2018학년도 자기소개서 양식(수정공지)</a></li>
+					<li class="col1-line-num1 float-r">2020-08-21</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">2018학년도 제2차시험(체력시험, 인·적성검사) ...</a></li>
+					<li class="col1-line-num2 float-r">2020-08-14</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">1차시험 합격자 제출서류 안내</a></li>
+					<li class="col1-line-num2 float-r">2020-08-07</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">2018학년도 신입생모집 1차시험 합격자 ...</a></li>
+					<li class="col1-line-num2 float-r">2020-08-03</li>
+				</ul>
+			</div>
+			
+			<div class="main-col1-toggle3 over both">
+				<ul class="main-col1-sub float-l">
+					<li class="col1-line float-l">2020<br><span class="line-blue">08.01</span></li>
+					<li class="col1-line02 float-l"><img src="images/mini-icon.png" alt="주석"><a href="#">박수인 작성자님의 의견에 대한 답변입니다.</a><br><br><br><span class="col1-line03"><a href="#">+ more</a></span></li>	
+				</ul>
+				<ul class="main-col-sub2 float-l">
+					<li class="col1-line04 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">최병천 작성자님의 의견에 대한 답변입니다.</a></li>
+					<li class="col1-line-num1 float-r">2020-08-01</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">황민중 작성자님의 의견에 대한 답변입니다.</a></li>
+					<li class="col1-line-num2 float-r">2020-08-01</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">송찬욱 작성자님의 의견에 대한 답변입니다.</a></li>
+					<li class="col1-line-num2 float-r">2020-08-01</li>
+					<li class="col1-line05 float-l"><img src="images/mini-gray.png" alt="순서"><a href="#">2018학년도 경찰대학 1차시험 이의제기 신청 ...</a></li>
+					<li class="col1-line-num2 float-r">2020-07-31</li>
+				</ul>
+			</div>
+			
+			<div class="main-cont both over ">
+				<h2 class="main-con-h2 float-l">포토갤러리</h2>
+				<p class="main-con-plue float-r"><a href="#">+ more</a></p>
+					<ul class="both main-photo">
+						<li class="main-pho float-l" style="margin-right:20px;"><a href="#"><img src="images/main-photo1.jpg" alt="포토갤러리"></a></li>
+						<li class="main-pho float-l" style="margin-right:20px;"><a href="#"><img src="images/main-photo2.jpg" alt="포토갤러리"></a></li>
+						<li class="main-pho float-l" style="margin-right:20px;"><a href="#"><img src="images/main-photo3.jpg" alt="포토갤러리"></a></li>
+						<li class="main-pho float-l"><a href="#"><img src="images/main-photo4.jpg" alt="포토갤러리"></a></li>
+					</ul>
+					<ul class="main-new float-l">
+						<li class="main-new1 over">뉴스레터<span class="float-r"><a href="#">+ more</a></span></li>
+						<li class="main-new3 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 뉴스레터 vol.32 (방학호)</a></li>
+						<li class="main-new-num2 float-r">2020-09-06</li>
+						<li class="main-new2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 뉴스레터 vol.31</a></li>
+						<li class="main-new-num1 float-r">2020-06-23</li>
+						<li class="main-new2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 뉴스레터 vol.30</a></li>
+						<li class="main-new-num1 float-r">2020-06-02</li>
+						<li class="main-new2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 뉴스레터 vol.29</a></li>
+						<li class="main-new-num1 float-r">2020-04-28</li>
+						<li class="main-new2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 뉴스레터 vol.28 (방학호)</a></li>
+						<li class="main-new-num1 float-r">2020-04-28</li>
+						<li class="main-new2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 뉴스레터 vol.27 (방학호)</a></li>
+						<li class="main-new-num1 float-r">2020-04-28</li>
+					</ul>
+					
+					<ul class="main-press float-l">
+						<li class="main-press1 over">언론보도<span class="float-r"><a href="#">+ more</a></span></li>
+						<li class="main-press3 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">경찰의 날 기념, 제30회 어 ...</a></li>
+						<li class="main-new-num2 float-r">2020-10-20</li>
+						<li class="main-press2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">경찰대학, 한국인성학회 공동 ...</a></li>
+						<li class="main-new-num1 float-r">2020-09-29</li>
+						<li class="main-press2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">청람 경찰대학 추석명절 봉사 ...</a></li>
+						<li class="main-new-num1 float-r">2020-09-29</li>
+						<li class="main-press2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">경찰대학 청람학술축전 개최</a></li>
+						<li class="main-new-num1 float-r">2020-09-29</li>
+						<li class="main-press2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">경찰대학도서관, 「제60차 ...</a></li>
+						<li class="main-new-num1 float-r">2020-09-21</li>
+						<li class="main-press2 float-l"><img src="images/mini-gray.png" alt="뉴스레터 순서"><a href="#">경찰대학 드론시큐리티연구 ...</a></li>
+						<li class="main-new-num1 float-r">2020-09-14</li>
+					</ul>
+					
+					<ul class="main-qa float-l">
+						<li class="main-qa1"><a href="#">2018학년도<br><span>신입생 입학안내</span></a></li>
+						<li class="main-qa2"><a href="#">Q&amp;A 바로가기</a></li>
+					</ul>
+					
+					<ul class="main-video float-l">
+						<li class="main-video1">경찰대학 <span>홍보동영상</span></li>
+						<li class="main-video2"><a><img src="images/main-video2.png" alt="비디오재생버튼"></a></li>
+					</ul>
+					
+					<ul class="main-pop float-l">
+						<li class="main-pop1 float-l">POPUPZONE</li>
+						<li class="main-pop2 float-l"><a href="#">1</a></li>
+						<li class="main-pop3 float-l"><a href="#">2</a></li>
+						<li class="main-pop3 float-l"><a href="#">3</a></li>
+						<li class="main-pop3 float-l"><a href="#">4</a></li>
+						<li class="main-popup"><img src="images/popup.jpg" alt="팝업이미지"></li>
+					</ul>
+					
+					<ul class="main-traf float-l">
+						<li class="main-traf1">어린이 교통교육<span class="float-r"><a href="#">+ more</a></span></li>
+						<li class="main-traf5 float-r"><img src="images/traf.png" alt="신호등"></li>
+						<li class="main-traf2">어린이 교통교육 이용안내</li>
+						<li class="main-traf3"><img src="images/mini-gray.png" alt="교통교육 순서">주소<br><span class="traf-span">충남 아산시 신창면 황산길</span><br><span class="traf-span">1005-50 (우편번호 31539)</span></li>
+						<li class="main-traf4"><img src="images/mini-gray.png" alt="언론보도 순서">전화<br><span class="traf-span">041-968-2173</span><br><span class="traf-span">041-968-2373</span></li>
+						
+					</ul>
+					
+					<ul class="main-sns float-l">
+						<li class="main-sns1">경찰대학 SNS</li>
+						<li class="main-sns2 float-l"><a href="#"><img src="images/main-sns.png" alt="sns 프로필사진"></a></li>
+						<li class="main-sns3 float-l"><span class="sns-span">경찰대학</span>@knpu_polaris · 9월 8일</li>
+						<li class="main-sns4 float-l">지난 8월 24일 '17년도 하반기 한 학기 동<br>안 경찰대학에서 생활하게 될 수탁교환학<br>생들이 경찰대학에 도착했습니다.<br><br>이번 학기에는 경찰대학과 학술교류협정을<br> 체결한 대학 중 영국 포츠머스 대학, 미국 ...<br><span class="sns-span2"><a href="#">fb.me/6vObyFPOb</a></span></li>
+					</ul>
+			</div>
+		</section>
+		<footer class="both">
+			<div class="foo-color">
+				<h3 class="fo-logo float-l"><img src="images/foo-logo.png" alt="하단로고"></h3>
+				<p class="fo-text float-l"><a href="#" class="fo-href1">개인정보처리방침</a><span class="fo-span">|</span><a href="#">저작권정책</a><span class="fo-span">|</span><a href="#">개인정보침해신고</a><span class="fo-span">|</span><a href="#">뷰어다운로드</a><span class="fo-span">|</span><a href="#">이메일집단수집거부</a></p>
+				<p class="fo-text2 float-l">[31539] 충청남도 아산시 신창면 황산길 100-50 경찰대학 ARS 041-968-2114 민원전화 : 182<br>
+								홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반 시 처벌될 수 있음을 양지하여 주시기 바랍니다.<br>
+								Copyright&copy; 2020. BY SONGINHYE All Right Reserved.
+				<form name="search" method="post" action=""><!-- form 글쓰거나 입력하는 창 get-소량 전송값보임 post-대량 전송값안보임-->
+					<fieldset class="none over" style="margin-right:20px;">
+						<legend class="un">사이트이동</legend><!-- 제목 -->
+						<label for="seltype" class="un">사이트이동</label>
+							<div class="float-r">
+								<select name="list" id="seltype" class="list"><!-- 셀렉트는 목록상자 네임은 저장공간 옵션은 누르면 보이는 값 벨류는 초기값 예)="2015"누르면 저장되는 이름-->
+									<option>관련기관 바로가기</option>
+									<option>경찰1</option>
+									<option>경찰2</option>
+									<option>경찰3</option>
+								</select>
+								<button type="submit" class="serch-button"><a href="#">이동</a></button><!-- 지우기같은 버튼 태크/서브밋을 만나면 액션으로 이동 처리함-->
+							</div>
+					</fieldset>
+				</form>
+				</p>	
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
