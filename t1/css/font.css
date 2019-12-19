@@ -1,0 +1,7 @@
+@charset "utf-8"
+    @font-face{
+        font-family: "Flaticon"
+        src: url("../font/Flaticon.eot") format("embedded-opentype"),
+             url("../font/Flaticon.woff") format("woff"),
+             url("../font/Flaticon.ttf") format("truetype"),
+             url("../font/Flaticon.woff2") format("woff2");}
