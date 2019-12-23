@@ -39,177 +39,13 @@
     <title>TEDS TEA</title>
     <link rel="stylesheet" href="css/reset.css">
     <style>
-/*        공통*/
-        .container{width: 100%; height: 100%;}
-        .blank{width: 100%; height: 100px;}
-/*        탑 영역*/
-        .topImg{
-            width: 100%; height:150px;
-            position: relative; top: 0; left: 0;
-            background-image: url(image/top_img.png);background-repeat: no-repeat;
-            background-size: 100% auto;}
-        .bottomImg{
-            width: 100%; height:201px;
-            background-image: url(image/bottom_img.png);background-repeat: no-repeat;
-            background-size: 100% auto; position: relative; bottom: 0;}
-        .topNavBox{width: 100%; height: 25px; position: absolute; bottom: 10px;}
-        .topNavBox .topNav{width: 150px; height: 25px; float: right; margin-right: 20px;}
-        .topNavBox .topNav li{
-            width: 50%; height: 20px; float: left;}
-        .topNavBox .topNav li a{display: block; text-align: center;}
-        .topNavBox .topNav li:hover a{text-decoration-line: underline;}
-        .logo{clear: both; }
-        .logo a{display: block; width: 200px; height: auto; margin: 0 auto;}
-        .logo a img{display: block;}
-        .gnb{clear: both; width: 1200px; height: 50px; margin: 20px auto; position: relative;}
-        .gnb::after{display: block; content: ""; width: 1200px; height: 2px; background-color: #48561c; position: absolute; bottom: 0; left: 15px;}
-        .gnb .menuWrap{width: 100%; height: 100%;}
-        .gnb .menuWrap li{width:14.28571428571429%; float: left;}
-        .gnb .menuWrap li a{display: block; width: 100%; height: 100%;position: relative;}
-        .gnb .menuWrap li a::after{display: block; content: ""; width: 100%; height: 3px; background-color: #f4426d; position: absolute; left: 15px; bottom: -7px; opacity: 0; transition: 0.4s; z-index: 2;}
-        .gnb .menuWrap li:hover a::after{opacity: 1;}
-        .gnb .menuWrap li a img{display: block; width: 100%; height: auto;}
 
-		/*새슬라이더*/
-		.banDummy {position: relative; width: 1960px; height: 400px; top: 0px; margin:0 auto; overflow: hidden; margin-bottom: 50px;}
-		.banDummy ul {position: absolute; margin: 0px; padding:0; list-style: none; }
-		.banDummy ul li {float: left; width: 600px; height: auto;}
-		.banDummy ul li img{ width: 600px; height: auto;}
-        figure::before{content: ""; width: 350px; height: 500px; background-color: rgba(255,255,255, 0.7); position: absolute;top: 0; left: 0; z-index: 5;}
-        figure::after{content: ""; width: 400px; height: 500px; background-color: rgba(255,255,255, 0.7); position: absolute;top: 0; right: 0; z-index: 5;}
-        .more{display: block; position: absolute; bottom: 50px; left: 10px; background-color: #333; color: #fff;}
-/*        메인 아이템*/
-        #itemWrap{clear: both; width: 1300px; margin: 0 auto;}
-        #itemWrap h3{text-align: center;}
-        #itemWrap h3 img{width: 220px;}
-        .depWrap{width: 100%; height: 20px; text-align: center; margin-bottom: 50px;}
-        .depWrap span{cursor: pointer; color: #666;}
-        .reItem img{width: 300px; height: 300px; overflow: hidden; border-radius: 10px; border: 1px solid #ccc;}
-        .reItem .itemWrapBox{position: relative; overflow: hidden; transition: 0.4s; border-radius: 10px; cursor: pointer;}
-        
-        .item_coment_box{position: absolute; bottom: -100%; left: 0; width: 300px; height: 100px; opacity:1; border-radius: 10px;}
-        .reItem .item_coment_box::before{position: absolute; bottom: 0; content: ""; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.8);}
-        .item_coment_box h3{width: 100%; text-align: center; color: #fff;position: absolute; bottom: 10px; font-weight: 100;}
-        .item_coment_box span{display: block; width: 110px; height: 50px;position: absolute; left: calc(50% - 55px); top: 5px;  overflow: hidden; float: left;}
-        .item_coment_box img{text-align: center; width: 50px; height: auto; border-radius: 0; border: none;}
-        .mainOn{color: #fff; background-color: rgba(244, 66, 109, 0.44);}
-        .reContents{width: 100%;}
-        .reContents span{display: flex; flex-flow: wrap;justify-content: space-around; margin-bottom: 5px;}
-        .saContents{width: 100%;}
-        .saContents span{display: flex; flex-flow: wrap;justify-content: space-around; margin-bottom: 5px;}
-/*        브로슈아 삽입자리*/
-/*        회사 버튼*/
-        .companyBtn{clear: both; width: 1300px; height: 520px; margin: 0 auto;}
-        .companyBtn .block{width: 510px; height: 510px; position: relative; left: calc(50% - 255px);}
-        .companyBtn .block div{position: absolute; border-radius: 10px; overflow: hidden;}
-        .companyBtn .block div::before{display: block; width: 100%; height: 100%; content: ""; background-color: rgba(0, 0, 0, 0.5); position: absolute; bottom: -100%; transition: 0.4s; cursor: pointer;}
-        .companyBtn .block div:hover::before{bottom: 0%;}
-        .companyBtn .block div:nth-of-type(3)::before{display: block; width: 100%; height: 100%; content: ""; background-color: rgba(0, 0, 0, 0); position: absolute; bottom: 0;}
-        .companyBtn .block div::after{display: block; width: 150px; height: 40px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px; position: absolute; bottom:calc(50% - 20px); left: calc(50% - 75px); color: #fff; text-align: center; line-height: 40px; font-weight: 100; letter-spacing: 1px; border: 2px solid rgba(255,255,255,0.8); cursor: pointer;}
-        .companyBtn .block div:hover::after{background-color: rgba(0, 0, 0, 0.8); border: 2px solid rgba(0, 0, 0, 0.8); transition: 0.4s 0.3s;}
-        .companyBtn .block .topLeft{top: 0; left: 0;}
-        .companyBtn .block .topLeft::after{content: "회사소개";}
-        .companyBtn .block .topRight{top: 0; right: 0;}
-        .companyBtn .block .topRight::after{content: "입점문의";}
-        .companyBtn .block .bottomLeft{bottom: 0; left: 0;}
-        .companyBtn .block .bottomRight{bottom: 0; right: 0;}
-        .companyBtn .block .bottomRight::after{content: "답례품문의";}
-        .companyBtn .block .deco{position: absolute; display: block; width: 40px; height: 40px;}
-        .companyBtn .block .deco img{display: block; width: 40px; height: 40px;}
-        .companyBtn .block .deco.decoTop{top: 15px; left: -48px;}
-        .companyBtn .block .deco.decoBottom{bottom: 15px; right: -48px;}
-        .block div img,.block div img{display: block; width: 250px; height: 250px;}
-/*        회사 통장, 반품주소*/
-        .companydummy{width: 100%; height: 150px; display: flex; justify-content: center; margin-bottom: 60px; }
-        .companydummy .dummy{width: 350px; height: 150px;}
-        .companydummy .dummyTitle{text-align: center; font-size: 1.1em;line-height: 2;}
-        .companydummy .phon{text-indent: 30px; font-size: 23px; font-weight: 700;}
-        .companydummy .phon a{display: block;}
-        .companydummy .dummysall{text-indent: 30px; font-size: 16px; font-weight: 500; color: #666; line-height: 23px;}
-        .dummy1{background-color: rgba(204, 204, 204, 0.34); border-radius: 10px 0 0 10px;}
-        .dummy3{background-color: rgba(204, 204, 204, 0.34); border-radius: 0 10px 10px 0;}
-        .dummy3 .dummy3Btn{width: 350px; height: 30px; margin-left: 30px;}
-        .dummy3 .dummy3Btn button{display: block;width: 100px; height: 30px; color: #666; float: left; background-color: #ccc; margin-right: 5px; margin-top: 8px;cursor: pointer; transition: 0.4s;}
-        .dummy3 .dummy3Btn button:hover{background-color: #333; color: #fff;}
-/*        푸터*/
-        #ft{clear: both; width: 100%; height: auto;  margin: 0 auto; position: relative;}
-        #ft a:hover{text-decoration-line: underline;}
-        #ft .labelbox{width: 160px; height: 20px; text-align: center; }
-        #ft .labelbox label{width: 80px; height: 20px;position: absolute; left: calc(50% - 40px); top: 0;}
-        .next_line{display: block;width: 100%; height: 20px; text-align: center; margin-bottom: 10px;}
-        .next_line img{width: 150px; text-align: center;}
-        #ftinner{width: 100%; height: 200px; line-height: 2; box-sizing: border-box;}
-        #ftinner ul{display: block; width: 100%; line-height: 3; position: relative; left:calc(50% - 180px);}
-        #ftinner li{float: left;}
-        #ftinner li a{display: block; padding: 0 10px;}
-        .redColor{color:red;}
-        #ftinner p{clear: both; display: block; text-align: center;}
-        #ft .copyright{position: absolute; right: 0; bottom: 0; color: #fff; background-color: rgba(51, 51, 51, 0.2);}
-/*        모달창*/
-        .bg_back{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.44); z-index: 10;}
-        .modal{width: 800px; height: 500px; position: absolute; left: calc(50% - 400px); top: calc(50% - 250px); background-color: #fff; z-index: 11;}
-        .modal_close{display: block; width: 20px; height: 20px; font-size: 30px; text-align: center; color: #fff; font-weight: bold; position: absolute; right: -30px; cursor: pointer; transition: all 0.4s;}
-        .modal_close:hover{transform: scale(1.1); color: #666;}
-        .sec_img{float: left; width: 400px; height: 400px;position: relative;}
-        .sec_img img{width: 350px;height: 350px; display: block; position: absolute; left:calc(50% - 175px); top: calc(50% - 175px);}
-        .sec_txtbox{width: 400px; height: 400px; float: right; padding: 50px 5px 10px;; box-sizing: border-box; color: #666;}
-        .sec_txtbox .sec_h3{text-align: center; border-radius: 5px; background-color: aliceblue; line-height: 2; margin-bottom: 20px;width: 380px; height: 40px; margin-left: 10px;}
-        .sec_txtbox div{width: 100%; height: 20px; }
-        .sec_txtbox div span{display: block; width: 100px; text-align: center; float: left; line-height: 2; }
-        .sec_txtbox .sec_h4{width: 290px; line-height: 2; background-color: #fff; text-indent: 5px; float: right; color:darkred;}
-        .sec_txtbox .sec_h5{clear: both; display: block; width: 370px; height: 200px; overflow-y: scroll; line-height: 2; background-color: aliceblue; text-align: left; margin-left: 20px; font-size: 15px;}
-        .modal_logo{width: 100%; height: 100px;}
-        .modal_logo img{display: block; width: 130px; height: auto; margin: 0 auto; padding-top: 10px; box-sizing: border-box;}
-        strong{background-color: yellow;}
-    </style>
     <script src="js/modernizr.custom.min.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/my.js/"></script>
 </head>
-<script>
-    $(document).ready(function(){
-        /*아이템 메뉴에 마우스 올리면 */
-        $(".reItem .itemWrapBox").on("mouseover",function(){
-           $(this).find(".item_coment_box").stop().animate({
-               bottom:0
-           },500);
-        });
-        $(".reItem .itemWrapBox").on("mouseout",function(){
-           $(this).find(".item_coment_box").stop().animate({
-               bottom:"-100%"
-           },500);
-        });
 
-
-        
-        /*배너움직임*/
-	var $banner = $(".banDummy").find("ul");
-
-		var $bannerWidth = $banner.children().outerWidth();//이미지의 폭을 계산해서 변수에 담아준다 
-		var $bannerHeight = $banner.children().outerHeight(); // 높이를 계산에서 변수에 담아준다 
-		var $length = $banner.children().length;//이미지의 갯수를 센다
-		var rollingInterval;
-
-		rollingInterval = setInterval(function() { rollingStart(); }, 3000);//3초에 한번씩 돌리기
-    
-		//롤링 펑션
-		function rollingStart() {
-			$banner.css("width", $bannerWidth * $length + "px"); //ul 넓이를 지정해준다 이미지폭 * 이미지수 
-			$banner.css("height", $bannerHeight + "px"); //ul 높이를 지정해준다
-
-			//배너의 좌측 위치를 옮겨 준다.
-			$banner.animate({left: - $bannerWidth + "px"}, 1500, function() { //애니메이션 1.5초 진행시간 
-				//첫번째 이미지를 마지막으로 복사해준다 
-				$(this).append("<li>" + $(this).find("li:first").html() + "</li>");
-				//그리고 첫번째 이미지는 복사가 되었기때문에 삭제해준다 
-				$(this).find("li:first").remove();
-				//다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
-				$(this).css("left", 0);
-			});
-		}
-    });
-</script>
 <body>
 <div class="container">
     <div class="topImg">
@@ -378,7 +214,7 @@
                     </div>
                 </span>
                 <span class="itemWrapBox">
-                    <img src="./image/item_img/item2_3.jpg" alt="">
+                    <img src="./image/item_img/item2_3.png" alt="">
                     <div class="item_coment_box">
                         <span>
                             <img src="./image/icon1.png" alt="찜" title="찜">
@@ -440,24 +276,6 @@
                     </div>
                 </span>
             </span>
-            <script>
-                $(document).ready(function(){
-                    $(".saContents").hide();
-                   $(".depbtn1").on("click",function(){
-                      $(".depbtn2").removeClass("mainOn");
-                      $(".saContents").fadeOut();
-                      $(this).addClass("mainOn");
-                      $(".reContents").fadeIn(500);
-                      
-                   });
-                    $(".depbtn2").on("click",function(){
-                      $(".depbtn1").removeClass("mainOn");
-                      $(".reContents").fadeOut();
-                      $(this).addClass("mainOn");
-                      $(".saContents").fadeIn(500);
-                   });
-                });
-            </script>
         </div>
         <div class="blank"></div>
         <h3 class="next_line"><img src="./image/next_line.png" alt="메인제목"></h3>
@@ -533,21 +351,6 @@
            <div class="bottomImg">
                <p class="copyright">COPYRIGHT&copy;INTOG ALL RIGHTS RESERVED.</p>
            </div>
-        <script>
-         $(document).ready(function(){
-             $("#label2").css("display","none");
-            $("#label1").on("click",function(){
-              $("#ftinner").slideUp();
-              $("#label1").css("display","none");
-              $("#label2").css("display","block");
-            });
-             $("#label2").on("click",function(){
-              $("#ftinner").slideDown();
-              $("#label1").css("display","block");
-              $("#label2").css("display","none");
-            });
-         });
-        </script>
     </footer>
 </div>
 <div class="bg_back"></div>
@@ -577,32 +380,6 @@
     <div class="modal_logo">
         <img src="image/logo_s.png" alt="">
     </div>
-    <script>
-        $(document).ready(function(){
-           $(".bg_back").hide();
-           $(".modal").hide();
-            $(".item_coment_box .moalOp").on("click",function(){
-                $(".bg_back").show();
-                $(".modal").show();
-            });
-            $(".modal .modal_close").on("click",function(){
-               $(".bg_back").hide();
-               $(".modal").hide();
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-           $(".item_coment_box .moalOp").on("click",function(){
-               var img_src=$(this).parents(".itemWrapBox").find("img").attr("src"); 
-               $("#modalview").attr("src",img_src);
-            });
-            $(".item_coment_box .moalOp").on("click",function(){
-               var h3_text=$(this).parents(".itemWrapBox").find(".item_coment_box h3").text();
-               $("#itemName").text(h3_text);
-            });
-        });
-    </script>
 </div>
 </body>
 </html>
