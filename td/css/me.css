@@ -59,6 +59,8 @@
         .saContents{width: 100%;}
         .saContents span{display: flex; flex-flow: wrap;justify-content: space-around; margin-bottom: 5px;}
 /*        브로슈아 삽입자리*/
+        .brochure{margin: 0 auto;}
+        .brochure img{display: block;}
 /*        회사 버튼*/
         .companyBtn{clear: both; width: 1300px; height: 520px; margin: 0 auto;}
         .companyBtn .block{width: 510px; height: 510px; position: relative; left: calc(50% - 255px);}
