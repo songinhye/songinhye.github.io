@@ -52,11 +52,7 @@
         ::-webkit-scrollbar{ display:none;}
         .container{width: 100vw; height: 100%; margin: a auto;}
         /*탑*/
-        .topImg{
-            width: 100%; height:50px;
-            position: relative; top: 0; left: 0;
-            background-image: url(../image/top_img.png);background-repeat: no-repeat;
-            background-size: 100% auto;}
+        
         .topNavBox{display: none;}
         .logo{margin-bottom: 20px;}
         .logo a{display: block; width: 150px; height: auto; margin: 0 auto;}
@@ -79,8 +75,6 @@
         .saContents{width: 100%; height: auto;}
         .reItem .itemWrapBox{margin-bottom: 10px;}
         /*브로슈아 삽입*/
-        .brochuremob{display: block;}
-        .brochureweb{display: none;}
         .blank{display: none;}
         /*회사 버튼 - 토글메뉴에 삽입*/
         .companyBtn{display: none;}
@@ -101,7 +95,31 @@
         .bottomImg{display: none;}
         /*토글 자리 잡기*/
         .container .mo_toggle{display: block;}
-        .topImg{display: none;}}
+        .topImg{display: none;}
+        /*모달창*/
+        .bg_back{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.44); z-index: 10;}
+        .modal{width: 360px; height: 500px; left: calc(50% - 170px); top: calc(50% - 250px); background-color: crimson;}
+        .modal_close{right: 10px; z-index: 6;color: #666;}
+        .modal_close:active{transform: scale(1);}
+        .sec_img{float: none; width: 360px; height: 250px; background-color: aqua;}
+        .sec_img img{width: 100%; height: 100%;left:0; top:0;}
+        
+        .sec_txtbox{width: 360px; height: 250px; float: right; padding:5px 0 0; box-sizing: border-box; color: #666;}
+        .sec_txtbox .sec_h3{text-align: center; border-radius: 0px; line-height: 0; margin-bottom: 10px;width: 360px; height: 40px; line-height: 40px; margin-left: 0px;}
+        
+        .sec_txtbox div{width: 100%; height: 20px; }
+        .sec_txtbox div span{display: block; width: 100px; text-align: center; float: left; line-height: 2;}
+        .sec_txtbox .m_none{display: none;}
+        
+        .sec_txtbox .sec_h4{width: 250px; line-height: 2; background-color: #fff; text-indent: 5px; float: none; color:darkred;}
+        .sec_txtbox .sec_h5{clear: both; display: block; width: 360px; height: 150px; background-color: aliceblue; text-align: left; font-size: 15px;  margin-left: 0px; margin-top: 10px;}
+        .sec_txtbox .sec_h5.sec_mob{display: block;}
+        .sec_txtbox .sec_h5.sec_web{display: none;}
+        
+        .modal_logo{display: none;}
+    
+    
+    }
     @media all and (min-width:768px) and (max-width:1299px){/*태블릿*/
         /*토글 자리 잡기*/
         body,html{-ms-overflow-style: none;}
@@ -135,9 +153,6 @@
         .reContents{width: 100%; height: auto;}
         .saContents{width: 100%; height: auto;}
         .reItem .itemWrapBox{margin-bottom: 10px;}
-        /*브로슈아 삽입*/
-        .brochureweb{display: none;}
-        .brochuremob{display: block;}
         /*회사버튼*/
         .companyBtn{clear: both; width: 100%; height: 520px; margin: 0 auto;}
         /*반품 주소 등*/
@@ -409,9 +424,6 @@
         <div class="brochureweb">
             <img src="./image/brochure1300.png" alt="브로슈어_테드티 라운드소싱에서 의뢰, 우승한 작품 이미지 가져옴" title="브로슈어_테드티 의뢰, 우승한 작품 이미지 가져옴_라운드소싱 ">
         </div>
-        <div class="brochuremob">
-            <img src="./image/brochureMobile.png" alt="브로슈어_테드티 라운드소싱에서 의뢰, 우승한 작품 이미지 가져옴" title="브로슈어_테드티 의뢰, 우승한 작품 이미지 가져옴_라운드소싱 ">
-        </div>
         <div class="blank"></div>
         <h3 class="next_line"><img src="./image/next_line.png" alt="메인제목"></h3>
         <div class="blank"></div>
@@ -498,8 +510,8 @@
         <h3 class="sec_h3" id="itemName"></h3>
         <div><span>가 &nbsp;&nbsp;&nbsp;격 : </span><h4 class="sec_h4">10,000원</h4></div>
         <div>
-            <span>안내사항 : </span>
-            <span class="sec_h5">
+            <span class="m_none">안내사항 : </span>
+            <span class="sec_h5 sec_web">
             <strong>배송안내[로젠택배 이용]</strong><br>
             금요일 주문건은 토요일 정상배송 이루어지며 배송기간은<br>평균 1일입니다.<br>
             배송지역은 전국 가능합니다.(제주, 산간지역 추가금액 발생)<br>
@@ -510,7 +522,22 @@
             <strong>교환/반품 안내</strong><br>
             단순 변심에 의한 반품은 상품 수령후 14일 이내 본사에<br> 도착해야 하고,교환/반품시 배송비는 고객부담 입니다.<br>
             상품 하자 및 오배송 등의 사유로 교환/반품시 상품<br>수령후 3개월 이내에 본사에 도착해야하며, 반품 비용은<br> 테드티에서 부담 합니다.<br>
-            가입 축하 무료 배송 쿠폰 이용시, 단순 변심으로 인한<br> 제품 반품시에는 왕복 배송비를 모두 부담해주셔야 합니다.</span></div>
+            가입 축하 무료 배송 쿠폰 이용시, 단순 변심으로 인한<br> 제품 반품시에는 왕복 배송비를 모두 부담해주셔야 합니다.</span>
+            
+            
+            <span class="sec_h5 sec_mob">
+            <strong>배송안내[로젠택배 이용]</strong><br>
+            금요일 주문건은 토요일 정상배송 이루어지며 배송<br>기간은평균 1일입니다.<br>
+            배송지역은 전국 가능합니다.<br>(제주, 산간지역 추가금액 발생)<br>
+            오후 3시 이전 주문건 당일 발송됩니다.<br>(일, 공휴일 제외)<br>
+            재고가 없을시 개별적으로 연락을 드리고 있습니다.<br>
+            이 점 양해해 주시기 바랍니다.
+            <br><br>-----------------------------------------<br><br>
+            <strong>교환/반품 안내</strong><br>
+            단순 변심에 의한 반품은 상품 수령후 14일 이내<br> 본사에 도착해야 하고,교환/반품시 배송비는<br> 고객부담입니다.<br>
+            상품 하자 및 오배송 등의 사유로 교환/반품시<br> 상품수령후 3개월 이내에 본사에 도착해야하며,<br> 반품 비용은 테드티에서 부담 합니다.<br>
+            가입 축하 무료 배송 쿠폰 이용시, 단순 변심으로<br> 인한 제품 반품시에는 왕복 배송비를<br> 모두 부담해주셔야 합니다.</span>
+            </div>
     </div>
     <div class="modal_logo">
         <img src="image/logo_s.png" alt="">
