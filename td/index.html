@@ -44,8 +44,134 @@
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/me.js"></script>
 </head>
-
+<style>
+/*미디어쿼리*/
+    
+    @media all and (min-width:360px) and (max-width:640px){/*모바일*/
+        body,html{-ms-overflow-style: none;}
+        ::-webkit-scrollbar{ display:none;}
+        .container{width: 100vw; height: 100%; margin: a auto;}
+        /*탑*/
+        .topImg{
+            width: 100%; height:50px;
+            position: relative; top: 0; left: 0;
+            background-image: url(../image/top_img.png);background-repeat: no-repeat;
+            background-size: 100% auto;}
+        .topNavBox{display: none;}
+        .logo{margin-bottom: 20px;}
+        .logo a{display: block; width: 150px; height: auto; margin: 0 auto;}
+        .logo a img{width: 100%;}
+        .gnb{display: none;}
+        /*슬라이더*/
+        .banDummy {position: relative; width: 360px; height: 240px; top: 0px; margin:0 auto; overflow: hidden; border-top: 2px solid rgba(204, 204, 204, 0.61); border-bottom: 1px solid rgba(204, 204, 204, 0.61); margin-bottom: 20px;}
+		.banDummy ul {position: absolute; margin: 0px; padding:0; list-style: none; }
+		.banDummy ul li {float: left; width: 360px; height: auto;}
+		.banDummy ul li img{ width: 360px; height: auto;}
+        figure::before{display: none;}
+        figure::after{display: none;}
+        /*아이템리스트*/
+        #itemWrap{clear: both; width: 360px; margin: 0 auto;}
+        #itemWrap h3{text-align: center;}
+        #itemWrap h3 img{width: 180px;}
+        .depWrap span{width: 100vw; text-align: center;font-size: 15px; width: 50px;}
+        /*아이템*/
+        .reContents{width: 100%; height: auto;}
+        .saContents{width: 100%; height: auto;}
+        .reItem .itemWrapBox{margin-bottom: 10px;}
+        /*브로슈아 삽입*/
+        .brochureweb{display: none;}
+        .brochuremob{display: block; width: 100vw;}
+        .brochuremob img{width: 100%;}
+        .blank{display: none;}
+        /*회사 버튼 - 토글메뉴에 삽입*/
+        .companyBtn{display: none;}
+        /*반품 주소 등*/
+        .companydummy{display: block; width: 100vh; height: auto;}
+        .companydummy .dummy{width: 100vw; height: 160px;}
+        /*푸터*/
+        #ft{clear: both; width: 100vw; height: 80px; background-color: #333; position: relative;}
+        .copyrightmo{display: block;width: auto; height: 30px; color: #fff; position: absolute; border: 0; right: 0; font-size: 10px; line-height: 30px;}
+        #ft .labelbox{display: none;}
+        .next_line{display: none;}
+        #ftinner{height: auto; color: #fff;}
+        #ftinner ul{display: block; width: 360px; height: 50px;}
+        #ftinner li{width: 25%; float: left;}
+        #ftinner li a{ color: #fff; font-size: 10px;}
+        #ftinner li a.redColor{color:red;}
+        #ftinner p{display: none;}
+        .bottomImg{display: none;}
+        /*토글 자리 잡기*/
+        .container .mo_toggle{display: block;}
+        .topImg{display: none;}}
+    @media all and (min-width:768px) and (max-width:1200px){/*태블릿*/
+        /*토글 자리 잡기*/
+        body,html{-ms-overflow-style: none;}
+        ::-webkit-scrollbar{ display:none;}
+        .container{width: 100vw; height: 100%; margin: a auto;}
+        .container .mo_toggle{display: block;}
+        /*탑*/
+        .m_menu .m_menulist li a{display: block; color: #fff; text-indent: 25px;}
+        .topImg{
+            width: 100%; height:50px;
+            position: relative; top: 0; left: 0;
+            background-image: url(../image/top_img.png);background-repeat: no-repeat;
+            background-size: 100% auto;}
+        .topNavBox{display: none;}
+        .logo{margin-bottom: 20px;}
+        .logo a{display: block; width: 150px; height: auto; margin: 0 auto;}
+        .logo a img{width: 100%;}
+        .gnb{display: none;}
+         /*아이템리스트*/
+        #itemWrap{clear: both; width: 768px; margin: 0 auto;}
+        #itemWrap h3{text-align: center;}
+        #itemWrap h3 img{width: 180px;}
+        .depWrap span{width: 100vw; text-align: center;font-size: 15px; width: 50px;}
+        /*슬라이더*/
+        .banDummy { width: 768px; height: 240px; top: 0px; margin:0 auto; overflow: hidden; border-top: 2px solid rgba(204, 204, 204, 0.61); border-bottom: 1px solid rgba(204, 204, 204, 0.61); margin-bottom: 20px;}
+		.banDummy ul li { width: 384px;}
+		.banDummy ul li img{width: 100%;}
+        figure::before{display: none;}
+        figure::after{display: none;}
+        /*아이템*/
+        .reContents{width: 100%; height: auto;}
+        .saContents{width: 100%; height: auto;}
+        .reItem .itemWrapBox{margin-bottom: 10px;}
+        /*브로슈아 삽입*/
+        .brochureweb{display: none;}
+        .brochuremob{display: block; width: 100%;}
+        .brochuremob img{width: 100%;}
+        /*회사버튼*/
+        .companyBtn{clear: both; width: 100%; height: 520px; margin: 0 auto;}
+        /*반품 주소 등*/
+        .companydummy{width: 100%; height: 150px; display: flex; justify-content: center; margin-bottom: 60px; }
+        .companydummy .dummy{width: 250px;}
+        .companydummy .dummysall{font-size: 14px;}
+        /*모달창*/
+        .modal_close{display: block; width: 20px; height: 20px; font-size: 30px; text-align: center; color: #333; font-weight: bold; position: absolute; right: 10px; cursor: pointer; transition: all 0.4s;}
+        .bg_back{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.44); z-index: 10;}
+        .modal{width: 760px; height: 500px; position: absolute; left: calc(50% - 380px); top: calc(50% - 250px); background-color: #fff; z-index: 11;}
+        .sec_img{float: left; width: 300px; height: 400px;position: relative;}
+        .sec_img img{width: 300px;height: 350px; display: block; position: absolute; left:calc(50% - 125px); top: calc(50% - 175px);}
+        .sec_txtbox{width: 440px; height: 400px; float: right; padding: 50px 5px 10px;; box-sizing: border-box; color: #666;} }
+    
+</style>
 <body>
+<div class="m_menu">
+        <sapn class="m_menu_close">x</sapn>
+        <ul class="m_menulist">
+            <li><a href="">Flower&amp;Herb</a></li>
+            <li><a href="">Flower&amp;Black Tea</a></li>
+            <li><a href="">Flower&amp;Water</a></li>
+            <li><a href="">Berb TeaBag</a></li>
+            <li><a href="">Gift Set</a></li>
+            <li><a href="">Refill(Bulk)</a></li>
+            <li><a href="">Partner Senter</a></li>
+        </ul>
+        <ul class="joinbox">
+            <li><a href="">Login</a></li>
+            <li><a href="">sing Up</a></li>
+        </ul>
+    </div>
 <div class="container">
     <div class="topImg">
         <div class="topNavBox">
@@ -53,6 +179,13 @@
                 <li><a href="#">Sing Up</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
+        </div>
+    </div>
+    <div class="mo_toggle">
+        <div class="togglebar">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
     <h1 class="logo">
@@ -74,19 +207,15 @@
     <figure class="banDummy">
         <ul class="ban">
             <li><img src="image/ban1.png" alt="1">
-                <a href="#" class="more">MORE</a>
             </li>
             <li>
                 <img src="image/ban2.png" alt="2">
-                <a href="#" class="more">MORE</a>
             </li>
              <li>
                 <img src="image/ban3.png" alt="2">
-                <a href="#" class="more">MORE</a>
             </li>
 			<li>
                 <img src="image/ban2.png" alt="2">
-                <a href="#" class="more">MORE</a>
             </li>
         </ul>
         <div class="btnBox">
@@ -279,8 +408,11 @@
         </div>
         <div class="blank"></div>
         <h3 class="next_line"><img src="./image/next_line.png" alt="메인제목"></h3>
-        <div class="brochure">
+        <div class="brochureweb">
             <img src="./image/brochure1300.png" alt="브로슈어_테드티 라운드소싱에서 의뢰, 우승한 작품 이미지 가져옴" title="브로슈어_테드티 의뢰, 우승한 작품 이미지 가져옴_라운드소싱 ">
+        </div>
+        <div class="brochuremob">
+            <img src="./image/brochureMobile.png" alt="브로슈어_테드티 라운드소싱에서 의뢰, 우승한 작품 이미지 가져옴" title="브로슈어_테드티 의뢰, 우승한 작품 이미지 가져옴_라운드소싱 ">
         </div>
         <div class="blank"></div>
         <h3 class="next_line"><img src="./image/next_line.png" alt="메인제목"></h3>
@@ -310,17 +442,17 @@
                 <p class="phon"><a href="tal:0507-1315-6491">0507.1315.6491</a></p>
                 <p class="dummysall">운영시간(09:00~17:00)</p>
                 <p class="dummysall">점심시간(12:00~13:00)</p>
-                <p class="dummysall">휴일안내(SATURDAY,SUNDAY,HOLIDAY)</p>
+                <p class="dummysall">휴일안내(토요일, 일요일, 공휴일)</p>
             </div>
             <div class="dummy dummy2">
                 <p class="dummyTitle">BANKING</p>
-                <p class="dummysall">황정식</p>
+                <p class="phon">황정식</p>
                 <p class="dummysall">신한 110496670160</p>
                 <p class="dummysall">농협 3010237831401</p>
             </div>
             <div class="dummy dummy3">
                 <p class="dummyTitle">RETURNS&amp;EXCHANGES</p>
-                <p class="dummysall">반품주소</p>
+                <p class="phon">반품주소</p>
                 <p class="dummysall">경상북도 김천시 새동네길 8</p>
                 <p class="dummysall">2층 테드티 꽃블랜딩 연구소</p>
                 <div class="dummy3Btn">
@@ -341,17 +473,21 @@
                 <li><a href="#">회사소개</a></li>
                 <li><a href="#">이용안내</a></li>
                 <li><a href="#">이용약관</a></li>
-                <li><a href="#" class="redColor">개인정보처리방침</a></li>
+                <li><a href="#" class="redColor">개인정보처리</a></li>
             </ul>
+            
             <p>상호. 테드티 | 대표. 황정식 | 이메일. <a href="mail:tedstea2030@naver.com">tedstea2030@naver.com</a></p>
             <p>사업자등록번호. 221-29-51053<a href="">(사업자정보확인)</a> | 통신판매신고번호. 제2018-경북김천-0150호</p>
             <p>개인정보보호책임자. 개인벙보관리자 <a href="mail:tedstea2030@gmail.com">(E-mail)</a> | 호스팅 제공자. (주)위사</p>
             <p>Lg고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 PG사의 구매안전서비스를 이용하실 수 있습니다. <a href="">(서비스가입사실확인)</a></p>
            </div>
-           <div class="bottomImg">
+           <div>
+              <div class="bottomImg">
+               <img src="./image/bottom_img.png" alt="바닥 이미지">
                <p class="copyright">COPYRIGHT&copy;INTOG ALL RIGHTS RESERVED.</p>
+              </div>
            </div>
-       
+       <span class="copyrightmo">COPYRIGHT&copy;INTOG ALL RIGHTS RESERVED.</span>
     </footer>
 </div>
 <div class="bg_back"></div>
@@ -381,7 +517,6 @@
     <div class="modal_logo">
         <img src="image/logo_s.png" alt="">
     </div>
-   
 </div>
 </body>
 </html>
