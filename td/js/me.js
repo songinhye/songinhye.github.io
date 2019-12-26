@@ -29,11 +29,13 @@ $(document).ready(function () {
         $("#ftinner").slideUp();
         $("#label1").css("display", "none");
         $("#label2").css("display", "block");
+        $(".bottomImg").css("height", "180px");
     });
     $("#label2").on("click", function () {
         $("#ftinner").slideDown();
         $("#label1").css("display", "block");
         $("#label2").css("display", "none");
+        $(".bottomImg").css("height", "201px");
     });
 });
 
@@ -100,3 +102,40 @@ $(document).ready(function () {
         });
     }
 });
+
+$(document).ready(function () {
+    /*메뉴박스*/
+   $(".m_menu").hide();
+   $(".mo_toggle").on("click",function(){
+       $(".m_menu").slideDown(400);
+       $(".mo_toggle").hide();
+   });
+    $(".m_menu_close").on("click",function(){
+       $(".m_menu").slideUp(400);
+       $(".mo_toggle").show();
+   });
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
