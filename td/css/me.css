@@ -101,7 +101,7 @@
         .companyBtn .block .deco.decoBottom{bottom: 15px; right: -48px;}
         .block div img,.block div img{display: block; width: 250px; height: 250px;}
 /*        회사 통장, 반품주소*/
-        .companydummy{width: 100%; height: 200px; display: flex; justify-content: space-between; margin-bottom: 60px; }
+        .companydummy{width: 100%; height: 200px; display: flex; justify-content:  center; margin-bottom: 60px; }
         .companydummy .dummy{width: 350px; height: 150px;}
         .companydummy .dummyTitle{text-align: center; font-size: 1.1em;line-height: 2;}
         .companydummy .phon{text-indent: 30px; font-size: 23px; font-weight: 700;}
