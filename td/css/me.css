@@ -77,7 +77,7 @@
         .saContents{width: 100%;}
         .saContents span{display: flex; flex-flow: wrap;justify-content: space-around; margin-bottom: 5px;}
 /*        브로슈아 삽입자리*/
-        .brochuremob{display: none; width: 100%; text-align: center;}
+        .brochuremob{display: none; width: 100vw; text-align: center;}
         .brochuremob img{width: 100%;}
         .brochureweb{width: 100%; text-align: center;}
         .brochureweb img{width: 100%;}
