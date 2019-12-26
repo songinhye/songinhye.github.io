@@ -11,14 +11,14 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $(".bg_back").hide();
+    $("#bg_back").hide();
     $(".modal").hide();
     $(".item_coment_box .moalOp").on("click", function () {
-        $(".bg_back").show();
+        $("#bg_back").show();
         $(".modal").show();
     });
     $(".modal .modal_close").on("click", function () {
-        $(".bg_back").hide();
+        $("#bg_back").hide();
         $(".modal").hide();
     });
 });
