@@ -77,10 +77,8 @@
         .saContents{width: 100%;}
         .saContents span{display: flex; flex-flow: wrap;justify-content: space-around; margin-bottom: 5px;}
 /*        브로슈아 삽입자리*/
-        .brochuremob{display: none; width: 100vw; text-align: center;}
-        .brochuremob img{width: 100%;}
-        .brochureweb{width: 100%; text-align: center;}
-        .brochureweb img{width: 100%;}
+        .brochureweb{width: 100%;}
+        .brochureweb img{display: block; width: 100%;}
 /*        회사 버튼*/
         .companyBtn{clear: both; width: 1300px; height: 520px; margin: 0 auto;}
         .companyBtn .block{width: 510px; height: 510px; position: relative; left: calc(50% - 255px);}
@@ -138,12 +136,13 @@
         .modal_close:hover{transform: scale(1.1); color: #666;}
         .sec_img{float: left; width: 400px; height: 400px;position: relative;}
         .sec_img img{width: 350px;height: 350px; display: block; position: absolute; left:calc(50% - 175px); top: calc(50% - 175px);}
-        .sec_txtbox{width: 400px; height: 400px; float: right; padding: 50px 5px 10px;; box-sizing: border-box; color: #666;}
+        .sec_txtbox{width: 400px; height: 400px; float: right; padding: 50px 5px 10px; box-sizing: border-box; color: #666;}
         .sec_txtbox .sec_h3{text-align: center; border-radius: 5px; background-color: aliceblue; line-height: 2; margin-bottom: 20px;width: 380px; height: 40px; margin-left: 10px;}
         .sec_txtbox div{width: 100%; height: 20px; }
         .sec_txtbox div span{display: block; width: 100px; text-align: center; float: left; line-height: 2; }
         .sec_txtbox .sec_h4{width: 290px; line-height: 2; background-color: #fff; text-indent: 5px; float: right; color:darkred;}
         .sec_txtbox .sec_h5{clear: both; display: block; width: 370px; height: 200px; overflow-y: scroll; line-height: 2; background-color: aliceblue; text-align: left; margin-left: 20px; font-size: 15px;}
+        .sec_txtbox .sec_h5.sec_mob{display: none;}
         .modal_logo{width: 100%; height: 100px;}
         .modal_logo img{display: block; width: 130px; height: auto; margin: 0 auto; padding-top: 10px; box-sizing: border-box;}
         strong{background-color: yellow;}
