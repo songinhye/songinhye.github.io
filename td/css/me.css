@@ -3,18 +3,37 @@
 /*        공통*/
         .container{width: 100%; height: 100%;}
         .blank{width: 100%; height: 100px;}
+/*        토글*/
+        .mo_toggle{display: none; width: 100vw; height: 45px; position: relative;}
+        .mo_toggle .togglebar{width: 45px; height: 45px; border-radius: 5px; position: absolute; right: 3%; top: 10%;}
+        .toggle{width: 100%; height: 40px;}
+        .togglebar span{display: block;height: 5px; border-radius: 10px; background-color: rgba(51, 51, 51, 0.79);margin: 7px auto; transition: all 0.4s; cursor: pointer;}
+        .togglebar span:first-of-type,.togglebar span:last-of-type{width: 90%;}
+        .togglebar span:nth-of-type(2){width: 70%;}
+        .togglebar:active span:nth-of-type(2){width: 90%;}
+        /*.m_menu{width: 100vw; height: 100vh; position:fixed; background-color: rgba(51, 51, 51, 0.59);z-index: 5;}*/
+.m_menu::before{content: ""; display: block; background-color: rgba(51, 51, 51, 0.47); position: fixed; left: 0; top: 0; width: 100vw; height: 100vh;}
+        .m_menu{width: 80%; height: 100vh; z-index: 6; background-color: rgba(51, 51, 51, 0.8);position: fixed; right: 0; top: 0;}
+.m_menu_close{display: block; position: absolute; right: 5%; top: 10px; color: rgba(255, 255, 255, 0.6); font-size: 3em;z-index: 6;cursor: pointer; transition: 0.47s 0.4s;}
+.m_menu_close:active{color: #fff;}
+        .m_menu .m_menulist{position: absolute; top: 30px; width: 100%; height: 100%;}
+        .m_menu .m_menulist li{left: 100%; line-height: 3; font-weight: 500; font-size: 1.5em; border-bottom: 1px dotted #fff; transition: 0.4s;}
+        .m_menu .m_menulist li a{display: block; color: #fff; text-indent: 15px;}
+        .m_menu .m_menulist li:active{background-color: #333;}
+        .m_menu .joinbox{position: absolute; bottom: 0; width: 100%; }
+        .m_menu .joinbox li{float: left; width: 50%;line-height: 3; transition: 0.47s;}
+        .m_menu .joinbox li a{display: block; width: 100%; height: 100%; text-align: center; z-index: 5; color: #fff;transition: 0.47s;}
+        .m_menu .joinbox li:active{background-color: #fff;}
+        .m_menu .joinbox li:active a{color: #333;}
+
 /*        탑 영역*/
         .topImg{
             width: 100%; height:150px;
             position: relative; top: 0; left: 0;
             background-image: url(../image/top_img.png);background-repeat: no-repeat;
             background-size: 100% auto;}
-        .bottomImg{
-            width: 100%; height:201px;
-            background-image: url(../image/bottom_img.png);background-repeat: no-repeat;
-            background-size: 100% auto; position: relative; bottom: 0;}
         .topNavBox{width: 100%; height: 25px; position: absolute; bottom: 10px;}
-        .topNavBox .topNav{width: 150px; height: 25px; float: right; margin-right: 20px;}
+        .topNavBox .topNav{width: 150px; height: 25px; float: right; margin-right: 100px;}
         .topNavBox .topNav li{
             width: 50%; height: 20px; float: left;}
         .topNavBox .topNav li a{display: block; text-align: center;}
@@ -31,14 +50,13 @@
         .gnb .menuWrap li:hover a::after{opacity: 1;}
         .gnb .menuWrap li a img{display: block; width: 100%; height: auto;}
 
-		/*새슬라이더*/
-		.banDummy {position: relative; width: 1960px; height: 400px; top: 0px; margin:0 auto; overflow: hidden; margin-bottom: 50px;}
+		/*vs라이더*/
+		.banDummy {position: relative; width: 1920px; height: 400px; top: 0px; margin:0 auto; overflow: hidden; margin-bottom: 50px;}
 		.banDummy ul {position: absolute; margin: 0px; padding:0; list-style: none; }
-		.banDummy ul li {float: left; width: 600px; height: auto;}
+		.banDummy ul li {float: left; width: 640px; height: auto;}
 		.banDummy ul li img{ width: 600px; height: auto;}
         figure::before{content: ""; width: 350px; height: 500px; background-color: rgba(255,255,255, 0.7); position: absolute;top: 0; left: 0; z-index: 5;}
         figure::after{content: ""; width: 400px; height: 500px; background-color: rgba(255,255,255, 0.7); position: absolute;top: 0; right: 0; z-index: 5;}
-        .more{display: block; position: absolute; bottom: 50px; left: 10px; background-color: #333; color: #fff;}
 /*        메인 아이템*/
         #itemWrap{clear: both; width: 1300px; margin: 0 auto;}
         #itemWrap h3{text-align: center;}
@@ -59,7 +77,8 @@
         .saContents{width: 100%;}
         .saContents span{display: flex; flex-flow: wrap;justify-content: space-around; margin-bottom: 5px;}
 /*        브로슈아 삽입자리*/
-        .brochure{text-align: center;}
+        .brochureweb{text-align: center;}
+        .brochuremob{text-align: center; display: none;}
 /*        회사 버튼*/
         .companyBtn{clear: both; width: 1300px; height: 520px; margin: 0 auto;}
         .companyBtn .block{width: 510px; height: 510px; position: relative; left: calc(50% - 255px);}
@@ -106,7 +125,10 @@
         #ftinner li a{display: block; padding: 0 10px;}
         .redColor{color:red;}
         #ftinner p{clear: both; display: block; text-align: center;}
-        #ft .copyright{position: absolute; right: 0; bottom: 0; color: #fff; background-color: rgba(51, 51, 51, 0.2);}
+        .copyrightmo{display: none;}
+        #ft .copyright{position: absolute; right: 0; bottom: 0; color: #fff; background-color: rgba(51, 51, 51, 0.2); z-index: 2;}
+        #ft .bottomImg{width: 100%; height:201px;; position: relative; bottom: 0;}
+        #ft .bottomImg img{display: block; width: 100%; height: 100%; position: absolute; border: 0;}
 /*        모달창*/
         .bg_back{position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.44); z-index: 10;}
         .modal{width: 800px; height: 500px; position: absolute; left: calc(50% - 400px); top: calc(50% - 250px); background-color: #fff; z-index: 11;}
