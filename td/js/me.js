@@ -70,6 +70,28 @@ $(document).ready(function () {
         }, 500);
     });
 
+   rollingbanner();
+});
+
+$(document).ready(function () {
+    /*메뉴박스*/
+   $(".m_menu").hide();
+   $(".mo_toggle").on("click",function(){
+       $(".m_menu").slideDown(400);
+       $(".mo_toggle").hide();
+   });
+    $(".m_menu_close").on("click",function(){
+       $(".m_menu").slideUp(400);
+       $(".mo_toggle").show();
+   });
+    
+});
+
+
+
+ var rollingInterval;//인터벌 값
+function rollingbanner(){
+
 
 
     /*배너움직임*/
@@ -78,7 +100,7 @@ $(document).ready(function () {
     var $bannerWidth = $banner.children().outerWidth(); //이미지의 폭을 계산해서 변수에 담아준다 
     var $bannerHeight = $banner.children().outerHeight(); // 높이를 계산에서 변수에 담아준다 
     var $length = $banner.children().length; //이미지의 갯수를 센다
-    var rollingInterval;
+   
 
     rollingInterval = setInterval(function () {
         rollingStart();
@@ -101,41 +123,11 @@ $(document).ready(function () {
             $(this).css("left", 0);
         });
     }
-});
-
-$(document).ready(function () {
-    /*메뉴박스*/
-   $(".m_menu").hide();
-   $(".mo_toggle").on("click",function(){
-       $(".m_menu").slideDown(400);
-       $(".mo_toggle").hide();
-   });
-    $(".m_menu_close").on("click",function(){
-       $(".m_menu").slideUp(400);
-       $(".mo_toggle").show();
-   });
-    
-});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+//리사이징 감지 함수
+$(window).resize(function (){
+   clearInterval(rollingInterval);//인터벌을 초기화해준다
+   rollingbanner();//다시배너돌려줌
+})
