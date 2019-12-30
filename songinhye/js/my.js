@@ -145,3 +145,22 @@ $(document).ready(function(){
                  $(".view a").attr("href",img_a);
              });
          });
+$(document).ready(function(){
+                $(".ltBtn").on("click",function(){
+                     $(".page2 .contents").animate({"margin-top":"+=500px"},"slow","swing",function(){
+                          $(".page2 .contents .img_com_Box:last").prependTo(".page2 .contents");
+                         $(".page2 .contents").css("margin-top","0px");
+                     });
+                });
+                $(".rtBtn").on("click",function(){
+                   $(".page2 .contents").animate({
+                       "margin-top":"-=500px" // -=  제 자리에서의 이미지의 위치 이동 (제 자리의 증감)
+                   },"slow","swing",function(){
+                       $(".page2 .contents .img_com_Box:first").appendTo(".page2 .contents");
+                       $(".page2 .contents").css("margin-top","0px");
+                });
+            });
+                $(window).resize(function (){
+                   $(document).height();
+                });
+            });  
