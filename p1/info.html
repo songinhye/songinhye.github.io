@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+	<head>
+		<title>경찰대학교</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/me.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$(".main-col1").click(function(){
+					$(".main-col1-toggle").show();
+					$(".main-col1").css("background-color","#fe9710");
+					$(".main-col1").css("font-weight","700");
+				});
+				$(".main-col2,.main-col3").click(function(){
+					$(".main-col1-toggle").hide()
+					$(".main-col1").css("background-color","#333");
+					$(".main-col1").css("font-weight","400");
+				});
+				$(".main-col2").click(function(){
+					$(".main-col1-toggle2").show();
+					$(".main-col2").css("background-color","#fe9710");
+					$(".main-col2").css("font-weight","700");
+				});
+				$(".main-col1,.main-col3").click(function(){
+					$(".main-col1-toggle2").hide();
+					$(".main-col2").css("background-color","#333");
+					$(".main-col2").css("font-weight","400");
+				});
+				$(".main-col3").click(function(){
+					$(".main-col1-toggle3").show();
+					$(".main-col3").css("background-color","#fe9710");
+					$(".main-col3").css("font-weight","700");
+				});
+				$(".main-col1,.main-col2").click(function(){
+					$(".main-col1-toggle3").hide();
+					$(".main-col3").css("background-color","#333");
+					$(".main-col3").css("font-weight","400");
+				});
+				$('.bxslider').bxSlider({
+				 mode: 'horizontal',
+				 speed:1000,
+				 auto: true,
+				 autoControls: true});
+				 
+				 $(".info-tog").click(function(){
+					$("ul .info-toggle").slideToggle();
+				});
+				
+				 $(".menu-l1").hover(function(){
+					$(".info-sub-menu01").show();
+				});
+				$(".menu-l1").mouseleave(function(){
+					$(".info-sub-menu01").hide();
+				});
+				
+				 $(".menu-l2").hover(function(){
+					$(".info-sub-menu02").show();
+				});
+				$(".menu-l2").mouseleave(function(){
+					$(".info-sub-menu02").hide();
+				});
+				
+				 $(".menu-l3").hover(function(){
+					$(".info-sub-menu03").show();
+				});
+				$(".menu-l3").mouseleave(function(){
+					$(".info-sub-menu03").hide();
+				});
+				
+				 $(".menu-l4").hover(function(){
+					$(".info-sub-menu04").show();
+				});
+				$(".menu-l4").mouseleave(function(){
+					$(".info-sub-menu04").hide();
+				});
+				
+				 $(".menu-l5").hover(function(){
+					$(".info-sub-menu05").show();
+				});
+				$(".menu-l5").mouseleave(function(){
+					$(".info-sub-menu05").hide();
+				});
+				
+				 $(".menu-l6").hover(function(){
+					$(".info-sub-menu06").show();
+				});
+				$(".menu-l6").mouseleave(function(){
+					$(".info-sub-menu06").hide();
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="top over">
+			<p class="top-menu float-r"><a href="#">로그인</a><a href="#">사이트맵</a><a href="#">E-MAIL</a></p>
+			<h1 class="logo float-l"><a href="index.html"><img src="images/logo2.png" alt="경찰대학교"></a></h1>
+		</div>
+		<header class="both">
+			<div class="menu-boder over">
+				<ul class="menu-list">
+					<li class="menu-l1 float-l"><a href="info.html" class="action">정보공개</a>
+						<ul class="info-sub-menu01">
+							<li class="info-sub-menu1"><a href="#">정보공개제도안내</a></li>
+							<li class="info-sub-menu1"><a href="#">사전정보공표</a></li>
+							<li class="info-sub-menu1"><a href="#">비공개세부기준</a></li>
+							<li class="info-sub-menu1"><a href="#">정보목록</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개청구</a></li>
+							<li class="info-sub-menu1"><a href="#">공공데이터개방</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개자료실</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l2 float-l"><a href="intro.html">대학소개</a>
+						<ul class="info-sub-menu02">
+							<li class="info-sub-menu1"><a href="#">학과장과의만남</a></li>
+							<li class="info-sub-menu1"><a href="#">창학이념/학훈</a></li>
+							<li class="info-sub-menu1"><a href="#">교가</a></li>
+							<li class="info-sub-menu1"><a href="#">현역</a></li>
+							<li class="info-sub-menu1"><a href="#">역대학장</a></li>
+							<li class="info-sub-menu1"><a href="#">비전</a></li>
+							<li class="info-sub-menu1"><a href="#">조직 및 업무소개</a></li>
+							<li class="info-sub-menu1"><a href="#">대학상징물</a></li>
+							<li class="info-sub-menu1"><a href="#">캠퍼스안내</a></li>
+							<li class="info-sub-menu1"><a href="#">경찰대학법령집</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l3 float-l"><a href="enter.html">입학</a>
+						<ul class="info-sub-menu03">
+							<li class="info-sub-menu1"><a href="#">모집요강</a></li>
+							<li class="info-sub-menu1"><a href="#">입시알림터</a></li>
+							<li class="info-sub-menu1"><a href="#">입시상담</a></li>
+							<li class="info-sub-menu1"><a href="#">입시자료</a></li>
+							<li class="info-sub-menu1"><a href="#">장학제도및졸업후진로</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l4 float-l"><a href="stu.html">교육</a>
+						<ul class="info-sub-menu04">
+							<li class="info-sub-menu1"><a href="#">대학과정</a></li>
+							<li class="info-sub-menu1"><a href="#">직무과정</a></li>
+							<li class="info-sub-menu1"><a href="#">교수마당</a></li>
+							<li class="info-sub-menu1"><a href="#">글로벌KNPU</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l5 float-l"><a href="life.html">대학생활</a>
+						<ul class="info-sub-menu05">
+							<li class="info-sub-menu1"><a href="#">학교생활</a></li>
+							<li class="info-sub-menu1"><a href="#">자치기구</a></li>
+							<li class="info-sub-menu1"><a href="#">대학행사</a></li>
+							<li class="info-sub-menu1"><a href="#">동아리활동</a></li>
+							<li class="info-sub-menu1"><a href="#">청람교육</a></li>
+						</ul>
+					</li>
+					<li class="menu-l6 float-l"><a href="knpunow.html">KNPU NOW</a>
+						<ul class="info-sub-menu06">
+							<li class="info-sub-menu1"><a href="#">공지사항</a></li>
+							<li class="info-sub-menu1"><a href="#">언론보도</a></li>
+							<li class="info-sub-menu1"><a href="#">동영상뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">포토뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">행복한나눔</a></li>
+							<li class="info-sub-menu1"><a href="#">어린이교통교육</a></li>
+							<li class="info-sub-menu1"><a href="#">폴리스아카데미</a></li>
+							<li class="info-sub-menu1"><a href="#">자료실</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="both">
+			<div class="sub-visual">
+				<div class="sub-text">
+					<h2 class="float-l">정보공개</h2>
+					<p class="sub-box float-l"><a href="knpunow.html"><img src="images/sub-menu-l.png" alt="상위 페이지로 이동"></a></p>
+					<p class="sub-box float-l" style="margin-left:30px;"><a href="intro.html"><img src="images/sub-menu-r.png" alt="하위 페이지로 이동"></a></p>
+				</div>
+			</div>
+			<div class="q-menu-bor">
+				<div class="q-menu-box over">
+					<ul class="float-r">
+						<li class="q-menu-li1 float-l"><a href="#"><img src="images/home.png" alt="홈"></a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li2 float-l"><a href="#">정보공개</a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li3 float-l"><a href="#">정보공개제도안내</a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li4 float-l"><a href="#">정보공개제도 도입배경</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="both">
+			<div class="info-contents">
+				<h2>정보공개제도 도입배경</h2>
+				<ul class="over">
+					<li class="info-list01 margin-r20 float-l"><a href="#">정보공개 제도란</a></li>
+					<li class="info-list02 margin-r20 float-l"><a href="#">정보공개제도<br>도입배경</a></li>
+					<li class="info-list01 margin-r20 float-l"><a href="#">정보공개 청구권자</a></li>
+					<li class="info-list01 margin-r20 float-l"><a href="#">정보공개방법</a></li>
+					<li class="info-list01 float-l"><a href="#">정보공개 수수료</a></li>
+				</ul>
+		`	</div>
+			<div class="sub-info01 both">
+				<ul class="info01-ul">
+					<li class="info01-li01"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">대통령의 공약사항(1992.11)</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">1992년 대통령선거 당시 3당의 공약사항으로 "정책수립의 민주화·공개화를 통한 행정의 공정성을 제고하고, 국민의 알권리를 충족하기 위하여 「정보<br><span class="minicon-span1">공개법」을 제정할 것 "을 내걸었습니다.</span></li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">지방자치단체의 정보공개조례 제정 시행 확산</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">청주시에서 1992년 10월 1일 전국 최초로 「청주시행정정보공개조례」를 시행함으로써 다른 지방자치 단체들도 이에 자극되어 정보공개 조례의 제정·<br><span class="minicon-span1">시행이 확산되어 현재는 178개 지방자치 단체에서 조례를 제정하여 운영중에 있습니다.</span></li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">학계, 사회단체, 정당 등의 정보공개법안 마련 및 입법 촉구</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">공법학회(1989. 12), 한국행정연구원(1992. 12), 경제정의실천시민연합(1993. 7), 새정치국민회의 (1996. 1)등 학계, 단체 정당 등에서 정보공개<br><span class="minicon-span1">법안을 마련하여 입법을 촉구한 바 있습니다.</span></li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">외국의 정보공개법 제정·운영</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">외국에서는 민주주의가 진전됨에 따라 정보공개법 제정의 당위성에 대한 조류가 확산되어 스웨덴·미국·캐나다 등 세계 12개 국가에서 정보공개에<br><span class="minicon-span1">관한 일반법을 제정하여 운영중에 있습니다.</span></li>
+					<li class="info01-li01 margin-t70"><img src="images/sub-bigcon.png" alt="대통령의 공약사항"><span class="bigcon-span1">행정정보공개운영지침 및 정보공개법령 제정</span></li>
+					<li class="info01-li02"><img src="images/sub-minicon.png" alt="대통령의 세부내용">행정정보공개 시행기반을 구축하고, 행정정보공개업무 처리기준 및 절차를 정립, 운영함으로써 정보공개에 관한 운영경험을 축적하기 위하여 국무총<br><span class="minicon-span1">리훈령 제288호로 「행정정보공개 운영지침」('94. 3. 2)을 발령하게 되었으며, 국민의 알권리를 보장하고 국정에 대한 국민의 참여와 국정운영의 투명</span><br><span class="minicon-span1">성을 확보하기 위하여「공공기관의 정보공개에 관한 법률 (법률 제5242호 1996. 12. 31)」과  「동법시행령(대통령령 제15498호, 1997. 10. 21)」과</span><br><span class="minicon-span1 margin-b70"> 「동법 시행규칙(총리령659호, 1997. 11. 11)」을 제정하여 1998. 1. 1부터 시행하게 되었습니다.</span></li>
+				</ul>
+			</div>
+		</section>
+		
+		
+		
+		<!--포터-->
+		<footer class="both over">
+			<div class="foo-color">
+				<h3 class="fo-logo float-l"><img src="images/foo-logo.png" alt="하단로고"></h3>
+				<p class="fo-text float-l"><a href="#" class="fo-href1">개인정보처리방침</a><span class="fo-span">|</span><a href="#">저작권정책</a><span class="fo-span">|</span><a href="#">개인정보침해신고</a><span class="fo-span">|</span><a href="#">뷰어다운로드</a><span class="fo-span">|</span><a href="#">이메일집단수집거부</a></p>
+				<p class="fo-text2 float-l">[31539] 충청남도 아산시 신창면 황산길 100-50 경찰대학 ARS 041-968-2114 민원전화 : 182<br>
+								홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반 시 처벌될 수 있음을 양지하여 주시기 바랍니다.<br>
+								Copyright(C) 2015. BY K.N.P.U All Right Reserved.
+				<form name="search" method="post" action=""><!-- form 글쓰거나 입력하는 창 get-소량 전송값보임 post-대량 전송값안보임-->
+					<fieldset class="none over" style="margin-right:20px;">
+						<legend class="un">사이트이동</legend><!-- 제목 -->
+						<label for="seltype" class="un">사이트이동</label>
+							<div class="float-r">
+								<select name="list" id="seltype" class="list"><!-- 셀렉트는 목록상자 네임은 저장공간 옵션은 누르면 보이는 값 벨류는 초기값 예)="2015"누르면 저장되는 이름-->
+									<option>관련기관 바로가기</option>
+									<option>경찰1</option>
+									<option>경찰2</option>
+									<option>경찰3</option>
+								</select>
+								<button type="submit" class="serch-button"><a href="#">이동</a></button><!-- 지우기같은 버튼 태크/서브밋을 만나면 액션으로 이동 처리함-->
+							</div>
+					</fieldset>
+				</form>
+				</p>	
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+

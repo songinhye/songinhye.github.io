@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+	<head>
+		<title>경찰대학교</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/me.css" rel="stylesheet">
+		<script>
+			$(document).ready(function(){
+				$(".main-col1").click(function(){
+					$(".main-col1-toggle").show();
+					$(".main-col1").css("background-color","#fe9710");
+					$(".main-col1").css("font-weight","700");
+				});
+				$(".main-col2,.main-col3").click(function(){
+					$(".main-col1-toggle").hide()
+					$(".main-col1").css("background-color","#333");
+					$(".main-col1").css("font-weight","400");
+				});
+				$(".main-col2").click(function(){
+					$(".main-col1-toggle2").show();
+					$(".main-col2").css("background-color","#fe9710");
+					$(".main-col2").css("font-weight","700");
+				});
+				$(".main-col1,.main-col3").click(function(){
+					$(".main-col1-toggle2").hide();
+					$(".main-col2").css("background-color","#333");
+					$(".main-col2").css("font-weight","400");
+				});
+				$(".main-col3").click(function(){
+					$(".main-col1-toggle3").show();
+					$(".main-col3").css("background-color","#fe9710");
+					$(".main-col3").css("font-weight","700");
+				});
+				$(".main-col1,.main-col2").click(function(){
+					$(".main-col1-toggle3").hide();
+					$(".main-col3").css("background-color","#333");
+					$(".main-col3").css("font-weight","400");
+				});
+				$('.bxslider').bxSlider({
+				 mode: 'horizontal',
+				 speed:1000,
+				 auto: true,
+				 autoControls: true});
+				 
+				 $(".info-tog").click(function(){
+					$("ul .info-toggle").slideToggle();
+				});
+				
+				 $(".menu-l1").hover(function(){
+					$(".info-sub-menu01").show();
+				});
+				$(".menu-l1").mouseleave(function(){
+					$(".info-sub-menu01").hide();
+				});
+				
+				 $(".menu-l2").hover(function(){
+					$(".info-sub-menu02").show();
+				});
+				$(".menu-l2").mouseleave(function(){
+					$(".info-sub-menu02").hide();
+				});
+				
+				 $(".menu-l3").hover(function(){
+					$(".info-sub-menu03").show();
+				});
+				$(".menu-l3").mouseleave(function(){
+					$(".info-sub-menu03").hide();
+				});
+				
+				 $(".menu-l4").hover(function(){
+					$(".info-sub-menu04").show();
+				});
+				$(".menu-l4").mouseleave(function(){
+					$(".info-sub-menu04").hide();
+				});
+				
+				 $(".menu-l5").hover(function(){
+					$(".info-sub-menu05").show();
+				});
+				$(".menu-l5").mouseleave(function(){
+					$(".info-sub-menu05").hide();
+				});
+				
+				 $(".menu-l6").hover(function(){
+					$(".info-sub-menu06").show();
+				});
+				$(".menu-l6").mouseleave(function(){
+					$(".info-sub-menu06").hide();
+				});
+				
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="top over">
+			<p class="top-menu float-r"><a href="#">로그인</a><a href="#">사이트맵</a><a href="#">E-MAIL</a></p>
+			<h1 class="logo float-l"><a href="index.html"><img src="images/logo2.png" alt="경찰대학교"></a></h1>
+		</div>
+		<header class="both">
+			<div class="menu-boder over">
+				<ul class="menu-list">
+					<li class="menu-l1 float-l"><a href="info.html">정보공개</a>
+						<ul class="info-sub-menu01">
+							<li class="info-sub-menu1"><a href="#">정보공개제도안내</a></li>
+							<li class="info-sub-menu1"><a href="#">사전정보공표</a></li>
+							<li class="info-sub-menu1"><a href="#">비공개세부기준</a></li>
+							<li class="info-sub-menu1"><a href="#">정보목록</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개청구</a></li>
+							<li class="info-sub-menu1"><a href="#">공공데이터개방</a></li>
+							<li class="info-sub-menu1"><a href="#">정보공개자료실</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l2 float-l"><a href="intro.html" class="action">대학소개</a>
+						<ul class="info-sub-menu02">
+							<li class="info-sub-menu1"><a href="#">학과장과의만남</a></li>
+							<li class="info-sub-menu1"><a href="#">창학이념/학훈</a></li>
+							<li class="info-sub-menu1"><a href="#">교가</a></li>
+							<li class="info-sub-menu1"><a href="#">현역</a></li>
+							<li class="info-sub-menu1"><a href="#">역대학장</a></li>
+							<li class="info-sub-menu1"><a href="#">비전</a></li>
+							<li class="info-sub-menu1"><a href="#">조직 및 업무소개</a></li>
+							<li class="info-sub-menu1"><a href="#">대학상징물</a></li>
+							<li class="info-sub-menu1"><a href="#">캠퍼스안내</a></li>
+							<li class="info-sub-menu1"><a href="#">경찰대학법령집</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l3 float-l"><a href="enter.html">입학</a>
+						<ul class="info-sub-menu03">
+							<li class="info-sub-menu1"><a href="#">모집요강</a></li>
+							<li class="info-sub-menu1"><a href="#">입시알림터</a></li>
+							<li class="info-sub-menu1"><a href="#">입시상담</a></li>
+							<li class="info-sub-menu1"><a href="#">입시자료</a></li>
+							<li class="info-sub-menu1"><a href="#">장학제도및졸업후진로</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l4 float-l"><a href="stu.html">교육</a>
+						<ul class="info-sub-menu04">
+							<li class="info-sub-menu1"><a href="#">대학과정</a></li>
+							<li class="info-sub-menu1"><a href="#">직무과정</a></li>
+							<li class="info-sub-menu1"><a href="#">교수마당</a></li>
+							<li class="info-sub-menu1"><a href="#">글로벌KNPU</a></li>
+						</ul>
+					</li>
+					
+					<li class="menu-l5 float-l"><a href="life.html">대학생활</a>
+						<ul class="info-sub-menu05">
+							<li class="info-sub-menu1"><a href="#">학교생활</a></li>
+							<li class="info-sub-menu1"><a href="#">자치기구</a></li>
+							<li class="info-sub-menu1"><a href="#">대학행사</a></li>
+							<li class="info-sub-menu1"><a href="#">동아리활동</a></li>
+							<li class="info-sub-menu1"><a href="#">청람교육</a></li>
+						</ul>
+					</li>
+					<li class="menu-l6 float-l"><a href="knpunow.html">KNPU NOW</a>
+						<ul class="info-sub-menu06">
+							<li class="info-sub-menu1"><a href="#">공지사항</a></li>
+							<li class="info-sub-menu1"><a href="#">언론보도</a></li>
+							<li class="info-sub-menu1"><a href="#">동영상뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">포토뉴스</a></li>
+							<li class="info-sub-menu1"><a href="#">행복한나눔</a></li>
+							<li class="info-sub-menu1"><a href="#">어린이교통교육</a></li>
+							<li class="info-sub-menu1"><a href="#">폴리스아카데미</a></li>
+							<li class="info-sub-menu1"><a href="#">자료실</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="both">
+			<div class="sub-visual">
+				<div class="sub-text">
+					<h2 class="float-l">대학소개</h2>
+					<p class="sub-box float-l"><a href="info.html"><img src="images/sub-menu-l.png" alt="상위 페이지로 이동"></a></p>
+					<p class="sub-box float-l" style="margin-left:30px;"><a href="enter.html"><img src="images/sub-menu-r.png" alt="하위 페이지로 이동"></a></p>
+				</div>
+			</div>
+			<div class="q-menu-bor">
+				<div class="q-menu-box over">
+					<ul class="float-r">
+						<li class="q-menu-li1 float-l"><a href="#"><img src="images/home.png" alt="홈"></a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li2 float-l"><a href="#">대학소개</a></li>
+						<li class="menu-right float-l"><img src="images/menu-right.png" alt="화살표"></li>
+						<li class="q-menu-li4 float-l"><a href="#">경찰대학 법령집</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="both">
+			<div class="info-contents">
+				<h2>경찰대학 법령집</h2>
+		`	</div>
+			<div class="sub-info01">
+				<form name="search" method="post" action="" style="margin-bottom:170px;"><!-- form 글쓰거나 입력하는 창 get-소량 전송값보임 post-대량 전송값안보임-->
+					<fieldset class="intro-con none over">
+						<legend class="un">게시판내 검색</legend><!-- 제목 -->
+						<label for="seltype" class="un">검색선택</label>
+							<div class="float-r">
+							<select name="list" id="seltype" class="lists"><!-- 셀렉트는 목록상자 네임은 저장공간 옵션은 누르면 보이는 값 벨류는 초기값 예)="2015"누르면 저장되는 이름-->
+								<option>제목</option>
+								<option>번호</option>
+								<option>등록일</option>
+							</select>
+							<label for="search" class="un">검색</label>
+							<input type="text" name="searchword" placeholder="" class="search02"><!-- 인풋타입 텍스트는 보이는것 네임은 저장공간 플레이스홀더는 보여지는 이름--><button type="submit" class="serch-button02"><a href="#">검색</a></button><!-- 지우기같은 버튼 태크/서브밋을 만나면 액션으로 이동 처리함-->
+							</div>
+					</fieldset>
+						<table summary="공지사항목록" class="intro-list both">
+							<colgroup>
+								<col width="100px">
+								<col width="600px">
+								<col width="110px">
+								<col width="150px">
+								<col width="100px">
+								<col width="100px">
+							</colgroup>
+							<caption class="un">법령집</caption>
+								<thead class="intro-list01">
+									<tr class="intro-tr01">
+										<th scope="col">번호</th>
+										<th scope="col">제목</th>
+										<th scope="col">작성자</th>
+										<th scope="col">등록일</th>
+										<th scope="col">조회수</th>
+										<th scope="col">파일</th>										
+									</tr>
+								</thead>
+								<tbody class="intro-list02">
+									<tr>
+										<td>106</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 조직 및 사무분장 규칙(170822)</a></td>
+										<td>관리자</td>
+										<td>2017-08-22</td>
+										<td>34</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>105</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 인사관리규칙(170814)</a></td>
+										<td>관리자</td>
+										<td>2017-08-16</td>
+										<td>35</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>104</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 직무과정 평가관리규칙(170731)</a></td>
+										<td>관리자</td>
+										<td>2017-07-31</td>
+										<td>26</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>103</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 조직 및 사무분장규칙(170710)</a></td>
+										<td>관리자</td>
+										<td>2017-07-11</td>
+										<td>39</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>102</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 초빙교수요원에 관한 규칙 폐지규칙(170601)</a></td>
+										<td>관리자</td>
+										<td>2017-06-07</td>
+										<td>25</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>101</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 교육서비스헌장 제정  및 운영에 관한 규칙...</a></td>
+										<td>관리자</td>
+										<td>2017-06-07</td>
+										<td>17</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">전경구타 및 가혹행위 근절규칙 폐지규칙(170601)</a></td>
+										<td>관리자</td>
+										<td>2017-06-07</td>
+										<td>24</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>99</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 조직 및 사무분장규칙(170313)</a></td>
+										<td>관리자</td>
+										<td>2017-04-27</td>
+										<td>59</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>98</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 연금매점 운영규칙(170109)</a></td>
+										<td>관리자</td>
+										<td>2017-01-10</td>
+										<td>146</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+									<tr>
+										<td>97</td>
+										<td style="text-align:left; padding-left:10px;"><a href="#">경찰대학 당직근무규칙(170109)</a></td>
+										<td>관리자</td>
+										<td>2017-01-10</td>
+										<td>99</td>
+										<td><a href="#"><img src="images/notice-img.png" alt="첨부파일" style="vertical-align:middle;"></a></td>
+									</tr>
+										
+								</tbody>
+						</table>
+							<div class="page over">
+								<ul style="margin-top:70px;">
+									<li class="intro-page float-l margin-r10"><a href="#"><img src="images/not-page.png" alt="페이지 이동"></a></li>
+									<li class="intro-page1 float-l margin-r10"><a href="#" class="page-active">1</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">2</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">3</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">4</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">5</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">6</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">7</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">8</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">9</a></li>
+									<li class="intro-page float-l margin-r10"><a href="#">10</a></li>
+									<li class="intro-page float-l"><a href="#"><img src="images/not-page-r.png" alt="페이지 이동"></a></li>
+								</ul>
+							</div>
+				 </form>
+			</div>
+		</section>
+		
+		
+		
+		<!--포터-->
+		<footer class="both over">
+			<div class="foo-color">
+				<h3 class="fo-logo float-l"><img src="images/foo-logo.png" alt="하단로고"></h3>
+				<p class="fo-text float-l"><a href="#" class="fo-href1">개인정보처리방침</a><span class="fo-span">|</span><a href="#">저작권정책</a><span class="fo-span">|</span><a href="#">개인정보침해신고</a><span class="fo-span">|</span><a href="#">뷰어다운로드</a><span class="fo-span">|</span><a href="#">이메일집단수집거부</a></p>
+				<p class="fo-text2 float-l">[31539] 충청남도 아산시 신창면 황산길 100-50 경찰대학 ARS 041-968-2114 민원전화 : 182<br>
+								홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반 시 처벌될 수 있음을 양지하여 주시기 바랍니다.<br>
+								Copyright(C) 2015. BY K.N.P.U All Right Reserved.
+				<form name="search" method="post" action=""><!-- form 글쓰거나 입력하는 창 get-소량 전송값보임 post-대량 전송값안보임-->
+					<fieldset class="none over" style="margin-right:20px;">
+						<legend class="un">사이트이동</legend><!-- 제목 -->
+						<label for="seltype" class="un">사이트이동</label>
+							<div class="float-r">
+								<select name="list" id="seltype" class="list"><!-- 셀렉트는 목록상자 네임은 저장공간 옵션은 누르면 보이는 값 벨류는 초기값 예)="2015"누르면 저장되는 이름-->
+									<option>관련기관 바로가기</option>
+									<option>경찰1</option>
+									<option>경찰2</option>
+									<option>경찰3</option>
+								</select>
+								<button type="submit" class="serch-button"><a href="#">이동</a></button><!-- 지우기같은 버튼 태크/서브밋을 만나면 액션으로 이동 처리함-->
+							</div>
+					</fieldset>
+				</form>
+				</p>	
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
