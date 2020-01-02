@@ -22,11 +22,12 @@ input:focus{outline: none;}
 /*        왼쪽 메뉴바*/
         .leftBar{position: fixed; left: 0; bottom: 70px; z-index: 10;}
         .leftBar .leftBtn{}
-        .leftBar .leftBtn div{display: block; width: 270px; height: 100px; color: #666;line-height: 50px; font-weight: bold; letter-spacing: 1px; text-align: center; border-radius: 5px; float: left;position: relative; left: -225px; margin-bottom: 5px;}
+        .leftBar .leftBtn div{display: block; width: 270px; height: 100px; color: #666;line-height: 50px; font-weight: bold; letter-spacing: 1px; text-align: center; border-radius: 5px; float: left; position: relative; left: -225px; margin-bottom: 5px;}
         .leftBar .leftBtn a{display: block; width: 220px; height: 100px;font-weight: bold; letter-spacing: 1px; text-align: center; background-color: #333; color: #fff; line-height: 100px; text-align: center;}
         .leftBar .leftBtn span{display: block; width: 100px; height: 100px;font-weight: 900; letter-spacing: 2px; text-align: center; background-color: transparent;  border-radius: 5px; color: #666; position: absolute;  top: 0; right: 0; transform: rotate(90deg); cursor: pointer;}
 /*        1페이지-겉페이지*/
         .page1 img{display: block; position: relative; top: 0; left: 0; width: 100%; height: 100%;}
+.intimg2{display: none;}
         .page1 .mouse_i{
             display: block; width: 30px; height: 40px; position: relative; left:calc(50% - 15px); bottom: 60px; border-radius: 10px;
             animation-name: gradient; animation-duration: 10s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
@@ -37,6 +38,11 @@ input:focus{outline: none;}
             display: block; content: ""; width: 2px; height: 30px; position: absolute; left:calc(50% - 1px); top: 5px; background-color: #ccc;}
         @keyframes mouse{50%{top: 25px;}}
 /*        2페이지-About Me*/
+        .ltgtBox{display: none; position: absolute; top: calc(50% - 25px); width:100%; height: 50px; text-align: center; font-size: 3em; font-weight: bold; cursor: pointer;}
+        .ltgtBox span{width: 50px; height: 50px; background-color: orange; line-height: 40px; transition: 0.4s; border-radius: 10px;}
+        .ltgtBox span:first-of-type{float: left;}
+        .ltgtBox span:last-of-type{float: right;}
+        .ltgtBox span:active{color: #fff; background-color: rgba(0,0,0,1); }
         .page2{background-color: rgba(251,215,134,1);}
         .page2 .inner{
             width: 1400px; height: 800px; padding: 50px; box-sizing: border-box; border-radius: 10px; position: relative; top:calc(50% - 400px); left: calc(50% - 700px); background-color: #fff; }
@@ -45,7 +51,7 @@ input:focus{outline: none;}
         .page2 .contents{width: 1300px; height: 500px;box-sizing: border-box;}
         .page2 .contents .img_com_Box{float: left; width: 350px; height: 500px; margin-left:62.5px; margin-top: 5px; overflow: hidden;  opacity: 0;}
         .page2 .contents .img_com_Box img{display: block; width: 350px; height: 350px; margin-bottom: 10px;  border-radius: 50% 0 50% 50% ;}
-        .page2 .contents .img_com{width: 350px; height: 130px; line-height: 2; text-align: center; padding: 15px 10px 5px; box-sizing: border-box; color: #333; border: 2px solid #ffc6b2; border-radius: 10px;}
+        .page2 .contents .img_com{width: 350px; height: 130px; line-height: 2; text-align: center; padding: 15px 10px 5px; box-sizing: border-box; color: #333; border: 2px solid #ffc6b2; border-radius: 10px; background-color: #fff;}
         .page2 .contents .img_com strong{color:orangered;}
 /*        3페이지-About Me*/
         .page3{background-color: #a0dfa8;}
