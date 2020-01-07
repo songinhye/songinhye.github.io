@@ -41,7 +41,7 @@ header {height:85px; margin-bottom:px;}
 .main-visual {/*background:url(../images/main-img.jpg) no-repeat center center;*/ width:100%; height:438px;}
 .main-txt-box {background:url(../images/main-visbox.png) no-repeat center center; width:530px; height:232px; position:absolute; bottom:120px; left:0px; z-index:30;}
 .main-txt-box li img {margin-top:80px; margin-left:50px; z-index:30;}
-.main-con-bg {width:100%; background:#dae1fc; height:100%; padding-top:25px; padding-bottom:130px;}
+.main-con-bg {width:100%; background:#f1f7ef; height:100%; padding-top:25px; padding-bottom:130px;}
 .main-cont1 {width:599px; height:289px; background:#fff; margin-right:25px;}
 .main-cont2 {width:274px; height:289px; background:#fff; margin-right:25px;}
 .main-cont3 {width:277px; height:289px; background:#fff; padding-right:20px;}
